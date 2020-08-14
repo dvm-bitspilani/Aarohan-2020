@@ -1,0 +1,21 @@
+.aboutContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6% 16%;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.aboutHeading {
+    width: 100%;
+    font-family: Playfair-Bold;
+    font-size: 2.5em;
+}
+
+.aboutQuote {
+    padding: 0 14%;
+    text-align: center;
+    font-weight: 800;
+}

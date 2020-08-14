@@ -1,14 +1,15 @@
 body{
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
+    background-color: #fafafa;
 }
 
 .landingContainer{
     display: flex;
     width: 100%;
     height: 100vh;
-    background: transparent url(../assets/img/adult-blur-book-business-261651.png);
+    background-image: url(../assets/img/adult-blur-book-business-261651.png);
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -103,4 +104,31 @@ body{
     background: black;
     width: 100%;
     margin-left: 0;
+}
+
+.button{
+    margin: auto;
+    padding: 10px 20px;
+    background: #F2CF19;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    padding: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

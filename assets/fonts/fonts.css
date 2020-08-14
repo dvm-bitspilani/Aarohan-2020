@@ -24,6 +24,11 @@
 }
 
 @font-face {
+    font-family: Playfair-Bold;
+    src: url("PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
     font-family: 'Ropa';
     src: url("Ropa_Sans/RopaSans-Regular.ttf");
 }
