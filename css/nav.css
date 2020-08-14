@@ -1,0 +1,19 @@
+.navHeader{
+    position: absolute;
+    z-index: 100;
+    padding: 30px 50px;
+}
+
+.hamburger{
+    display: flex;
+    width: 32px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburgerLines{
+    height: 4px;
+    background: black;
+    border-radius: 50px;
+    margin: 2px;
+}
