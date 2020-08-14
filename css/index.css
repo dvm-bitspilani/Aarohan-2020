@@ -111,6 +111,7 @@ body{
     padding: 10px 20px;
     background: #F2CF19;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 ::-webkit-scrollbar {
