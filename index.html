@@ -10,14 +10,22 @@
     <link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css">
 </head>
     <body>
-        <div class="wrapper">
-            <div class="navHeader">
-                <div class="hamburger">
-                    <div class="hamburgerLines"></div>
-                    <div class="hamburgerLines"></div>
-                    <div class="hamburgerLines"></div>
-                </div>
-            </div>
+    <div class="navHeader">
+        <div class="hamburger" onclick="openCloseNav()">
+            <div class="hamburgerLines"></div>
+            <div class="hamburgerLines"></div>
+            <div class="hamburgerLines"></div>
+        </div>
+    </div>
+    <div id="navBar">
+        <div class="navElements">Home</div>
+        <div class="navElements">About Us</div>
+        <div class="navElements">Results</div>
+        <div class="navElements">Answer Key</div>
+        <div class="navElements">FAQs</div>
+        <div class="navElements">Contact Us</div>
+    </div>
+        <div class="wrapper" onclick="closeNav()">
             <div class="landingContainer">
                 <div class="landingBack"></div>
                 <div class="landingBodyContainer">
@@ -101,6 +109,38 @@
                 </div>
             </div>
             <div class="aboutContainer">
+                <div class="background">
+                    <img src="assets/img/Group%2097.png" style="
+                        position: relative;
+                        top: 48%;
+                        left: 77%;
+                    ">
+                    <img src="assets/img/Group%2098.png" style="
+                        position: absolute;
+                        top: 5%;
+                        left: 66%;
+                    " />
+                    <img src="assets/img/Group%2099.png" style="
+                        position: absolute;
+                        top: 13%;
+                        left: -3%;
+                    " />
+                    <img src="assets/img/Group%20101.png" style="
+                        position: absolute;
+                        left: 22%;
+                        top: 68%;
+                    " />
+                    <img src="assets/img/Group%20102.png" style="
+                        position: absolute;
+                        top: 32%;
+                        left: -13%;
+                    " />
+                    <img src="assets/img/Group%20103.png" style="
+                        position: absolute;
+                        left: 35%;
+                        top: -4%;
+                    " />
+                </div>
                 <div class="aboutHeading">
                     About Apogee
                 </div>
@@ -161,4 +201,5 @@
             </div>
         </div>
     </body>
+    <script src="js/nav.js"></script>
 </html>
