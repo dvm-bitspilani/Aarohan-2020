@@ -6,6 +6,8 @@
     padding: 6% 16%;
     box-sizing: border-box;
     font-family: poppins;
+    background-color: #fafafa;
+    transition: 0.2s;
 }
 
 .aboutHeading {
