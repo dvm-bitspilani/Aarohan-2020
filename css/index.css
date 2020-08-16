@@ -114,6 +114,13 @@ body{
     font-weight: bold;
 }
 
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
