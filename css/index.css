@@ -3,6 +3,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     background-color: #fafafa;
+    scroll-behavior: smooth;
 }
 
 .landingContainer{
@@ -142,4 +143,10 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+.testimonialContainer{
+    z-index: 2;
+}
+.faqContainer{
+    z-index: 1;
 }
