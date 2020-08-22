@@ -1,0 +1,58 @@
+.registrationContainer{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 6% 16%;
+    box-sizing: border-box;
+    font-family: poppins;
+    background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
+   
+}
+.reisterasstudentcontainer{
+    width: 50%;
+    float: left;
+}
+.reisterasschoolcontainer{
+    width: 50%;
+    float: right;
+}
+
+.reisterStudentHeading{
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 7vh;
+    font-family: Playfair-Bold;
+    font-size: 2em;
+}
+
+.reisterSchoolHeading{
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 7vh;
+    font-family: Playfair-Bold;
+    font-size: 2em;
+}
+
+form li {
+    list-style: none;
+}
+ 
+    
+form ul li input, select, span {
+    margin-bottom: 10px;
+}
+
+input{
+    background-color: white;
+    height: 4vh;
+    padding-left: 0.5vw;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #000000;
+}
+    
+
+    
+    

@@ -23,13 +23,22 @@
 
 .faqelementcontainer{
     width: 66vw;
+    height: 4vh;
     padding-left: 0.5vw;
     background-color: #FFFFFF;
     border: 1px solid #707070;
     border-radius: 4px;
     margin-top: 2vh;
     color: #000000;
+    transition: height .5s,width .5s;
+    
 }
+
+.faqelementcontainer:nth-child(3){
+    width: 55vw;
+    height: 18vh;
+}
+
 .faqquestion{
     padding-top:0.8vh;
     padding-bottom:0.8vh;
