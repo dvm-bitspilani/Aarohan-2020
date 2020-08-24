@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Aarohan 2020</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="css/nav.css" type="text/css">
-    <link rel="stylesheet" href="css/about.css" type="text/css">
-    <link rel="stylesheet" href="css/testimonial.css" type="text/css">
-    <link rel="stylesheet" href="css/faq.css" type="text/css">
-    <link rel="stylesheet" href="css/registration.css" type="text/css">
-    <link rel="stylesheet" href="css/footer.css" type="text/css">
-    <link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <link href="css/testimonial.css" rel="stylesheet" type="text/css">
+    <link href="css/faq.css" rel="stylesheet" type="text/css">
+    <link href="css/registration.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body onload="document.registration.userid.focus();">
+<body>
 <div class="navHeader">
     <div class="hamburger" onclick="openCloseNav()">
         <div class="hamburgerLines"></div>
@@ -213,7 +213,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -224,7 +224,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -235,7 +235,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -246,7 +246,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -257,7 +257,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -268,7 +268,7 @@
             <div class="faqelementcontainer">
                 <div class="faqquestion">
                     Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -284,37 +284,37 @@
             <div class="registerStudentHeading">
                 Register As student
             </div>
-            <form name='registration' onSubmit="return formValidation();" class="registrationForm">
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name" size="12"/>
-                    <label for="school">School Name:</label>
-                    <input type="text" name="address" size="50"/>
-                    <label for="phone">Phone</label>
-                    <input type="text" name="phone"/>
-                    <label>Class</label>
+            <form class="registrationForm" name='registration' onSubmit="return formValidation();">
+                <label for="name">Full Name</label>
+                <input name="name" size="12" type="text"/>
+                <label for="school">School Name:</label>
+                <input name="address" size="50" type="text"/>
+                <label for="phone">Phone</label>
+                <input name="phone" type="text"/>
+                <label>Class</label>
                 <div class="registrationCheckContainer">
-                    <input type="radio" name="class" value="class9" id="class9"/>
-                    <label class="registerCheckbox" for="class9" >
+                    <input id="class9" name="class" type="radio" value="class9"/>
+                    <label class="registerCheckbox" for="class9">
                         Class 9
                     </label>
-                    <input type="radio" name="class" value="class9" id="class10" checked/>
-                    <label class="registerCheckbox" for="class10" >
+                    <input checked id="class10" name="class" type="radio" value="class9"/>
+                    <label class="registerCheckbox" for="class10">
                         Class 10
                     </label>
-                    <input type="radio" name="class" value="class9" id="class11"/>
-                    <label class="registerCheckbox" for="class11" >
+                    <input id="class11" name="class" type="radio" value="class9"/>
+                    <label class="registerCheckbox" for="class11">
                         Class 11
                     </label>
-                    <input type="radio" name="class" value="class9" id="class12"/>
-                    <label class="registerCheckbox" for="class12" >
+                    <input id="class12" name="class" type="radio" value="class9"/>
+                    <label class="registerCheckbox" for="class12">
                         Class 12
                     </label>
                 </div>
                 <label for="email">Email:</label>
-                <input type="text" name="email" id="email" size="50"/>
+                <input id="email" name="email" size="50" type="text"/>
                 <div class="buttonContainer">
-                    <input type="button" name="cancel" value="Cancel" class="cancelButton" />
-                    <input type="submit" name="submit" value="Submit" class="submitButton" />
+                    <input class="cancelButton" name="cancel" type="button" value="Cancel"/>
+                    <input class="submitButton" name="submit" type="submit" value="Submit"/>
                 </div>
             </form>
         </div>
@@ -322,26 +322,26 @@
             <div class="registerSchoolHeading">
                 Register As School
             </div>
-            <form name='registration' onSubmit="return formValidation();" class="registrationForm">
+            <form class="registrationForm" name='registration' onSubmit="return formValidation();">
                 <label>School Name
-                    <input type="text" name="userid" id="userID" placeholder="Vidya Mandir Delhi" size="12"/>
+                    <input id="userID" name="userid" placeholder="Vidya Mandir Delhi" size="12" type="text"/>
                 </label>
                 <label>School POC Name
-                    <input type="password" name="passid" placeholder="Vidya Mandir Delhi" id="passid" size="12"/>
+                    <input id="passid" name="passid" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
                 </label>
                 <div class="grouping">
                     <label style="width: 38%">
                         City
-                        <input type="text" name="username" size="50" placeholder="Jaipur"/>
+                        <input name="username" placeholder="Jaipur" size="50" type="text"/>
                     </label>
                     <label style="width: 56%">
                         Contact No. Of In charge
-                        <input type="text" name="coi" size="50" placeholder="8545811530"/>
+                        <input name="coi" placeholder="8545811530" size="50" type="text"/>
                     </label>
                 </div>
                 <label>
                     Email
-                    <input type="text" name="email">
+                    <input name="email" type="text">
                 </label>
                 <label>
                     Class-wise split up of no of students:
@@ -349,32 +349,32 @@
                 <div class="registrationInputContainer">
                     <label>
                         Class 9
-                        <input type="number" name="c9" />
+                        <input name="c9" type="number"/>
                     </label>
                     <label>
                         Class 10
-                        <input type="number" name="c10" />
+                        <input name="c10" type="number"/>
                     </label>
                     <label>
                         Class 11
-                        <input type="number" name="c11" />
+                        <input name="c11" type="number"/>
                     </label>
                     <label>
                         Class 12
-                        <input type="number" name="c12" />
+                        <input name="c12" type="number"/>
                     </label>
                 </div>
                 <label style="width: 48%">
                     Total No. Of Students
-                    <input type="number" name="tns" size="50" placeholder="1000"/>
+                    <input name="tns" placeholder="1000" size="50" type="number"/>
                 </label>
                 <label style="width: 48%">
                     Total Amount to be Paid
-                    <input type="text" name="tap" size="50"/>
+                    <input name="tap" size="50" type="text"/>
                 </label>
                 <div class="buttonContainer">
-                    <input type="button" name="cancel" value="Cancel" class="cancelButton" />
-                    <input type="submit" name="submit" value="Submit" class="submitButton" />
+                    <input class="cancelButton" name="cancel" type="button" value="Cancel"/>
+                    <input class="submitButton" name="submit" type="submit" value="Submit"/>
                 </div>
             </form>
         </div>

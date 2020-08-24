@@ -1,18 +1,18 @@
-.navHeader{
+.navHeader {
     position: fixed;
     top: 0;
     z-index: 100;
     padding: 30px 50px;
 }
 
-.hamburger{
+.hamburger {
     display: flex;
     width: 32px;
     flex-direction: column;
     cursor: pointer;
 }
 
-.hamburgerLines{
+.hamburgerLines {
     height: 4px;
     background: black;
     border-radius: 2px;
@@ -20,7 +20,7 @@
     transition: 0.2s;
 }
 
-#navBar{
+#navBar {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,12 +33,13 @@
     flex-wrap: wrap;
     width: 33%;
     height: 100%;
-    z-index: 1;
+    /* z-index: 1; */
     transform: translateX(-100%);
     transition: 0.2s;
+    z-index: 99;
 }
 
-.navElements{
+.navElements {
     width: 100%;
     text-align: center;
     font-size: 2em;

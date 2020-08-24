@@ -1,4 +1,4 @@
-body{
+body {
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
@@ -6,7 +6,7 @@ body{
     scroll-behavior: smooth;
 }
 
-.landingContainer{
+.landingContainer {
     display: flex;
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@ body{
     z-index: -1;
 }
 
-.landingBack{
+.landingBack {
     position: absolute;
     left: 0;
     top: 0;
@@ -30,20 +30,20 @@ body{
     background: white;
 }
 
-.landingBodyContainer{
+.landingBodyContainer {
     text-align: center;
     font-family: poppins, serif;
     margin: 13% 0 10%;
     z-index: 2;
 }
 
-.landingHeading{
+.landingHeading {
     font-family: Poppins-Bold, serif;
     font-size: 4em;
     text-transform: uppercase;
 }
 
-.landingSubHeading{
+.landingSubHeading {
     font-size: 1.7em;
     font-family: Poppins-Bold, serif;
     display: flex;
@@ -51,7 +51,7 @@ body{
     justify-content: center;
 }
 
-.decoLine{
+.decoLine {
     width: 60px;
     height: 5px;
     border-radius: 50px;
@@ -59,7 +59,7 @@ body{
     margin: 0 11px;
 }
 
-.resultContainer{
+.resultContainer {
     background: #F2CF19 0% 0%;
     margin: 6% 31%;
     padding: 10px;
@@ -69,16 +69,16 @@ body{
     transition: 0.1s;
 }
 
-.resultContainer:hover{
+.resultContainer:hover {
     transform: scale(1.1);
 }
 
-.resultContainer:active{
+.resultContainer:active {
     transform: scale(1);
     transition: 0;
 }
 
-.landingFooter{
+.landingFooter {
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -87,11 +87,11 @@ body{
     z-index: 2;
 }
 
-.landingFooterElements{
+.landingFooterElements {
     cursor: pointer;
 }
 
-.landingFooterElements::after{
+.landingFooterElements::after {
     content: '';
     display: block;
     height: 2px;
@@ -101,7 +101,7 @@ body{
     margin-left: 50%;
 }
 
-.landingFooterElements:hover:after{
+.landingFooterElements:hover:after {
     content: '';
     display: block;
     height: 2px;
@@ -110,7 +110,7 @@ body{
     margin-left: 0;
 }
 
-.button{
+.button {
     margin: auto;
     padding: 10px 20px;
     background: #F2CF19;
@@ -118,11 +118,14 @@ body{
     font-weight: bold;
 }
 
-.background{
+.background {
     position: absolute;
     height: 100%;
-    width: 100%;
-    z-index: -1;
+    width: 100vw;
+    box-sizing: border-box;
+    /* z-index: -1; */
+    /* left: 0; */
+    /* padding-left: 16%; */
 }
 
 ::-webkit-scrollbar {
@@ -144,9 +147,11 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-.testimonialContainer{
+
+.testimonialContainer {
     z-index: 2;
 }
-.faqContainer{
+
+.faqContainer {
     z-index: 1;
 }

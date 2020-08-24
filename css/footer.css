@@ -1,19 +1,19 @@
-.footer{
+.footer {
 
-color: white;
+    color: white;
 
-background: black;
+    background: black;
 
-display: flex;
+    display: flex;
 
-justify-content: space-between;
+    justify-content: space-between;
 
-font-family: poppins;
+    font-family: poppins;
 
-padding: 5% 14%;
+    padding: 5% 14%;
 }
 
-.contactElement{
+.contactElement {
     padding: 5% 0;
     font-size: 0.9em;
 }
@@ -23,25 +23,37 @@ padding: 5% 14%;
 }
 
 .contactElements {
-padding: 5% 0;
+
+    padding: 5% 0;
 }
 
 .registerElement {
-padding: 5% 0;
-display: flex;
-width: 50%;
-flex-wrap: wrap;
-justify-content: space-between;
-font-size: 0.9em;
+
+    padding: 5% 0;
+
+    display: flex;
+
+    width: 50%;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    font-size: 0.9em;
 }
 
 .registerElement h2 {
-margin-top: 0;
-width: 100%;
-text-align: center;
+
+    margin-top: 0;
+
+    width: 100%;
+
+    text-align: center;
 }
 
 .registerContact {
-width: 50%;
-text-align: center;
+
+    width: 50%;
+
+    text-align: center;
 }

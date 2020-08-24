@@ -1,4 +1,4 @@
-.faqContainer{
+.faqContainer {
     margin-top: -15vh;
     z-index: 1;
     height: 100vh;
@@ -10,7 +10,7 @@
     box-sizing: border-box;
     font-family: poppins;
     background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
-   
+
 }
 
 .faqHeading {
@@ -21,7 +21,7 @@
     font-size: 2.5em;
 }
 
-.faqelementcontainer{
+.faqelementcontainer {
     width: 66vw;
     height: 4vh;
     padding-left: 0.5vw;
@@ -30,26 +30,26 @@
     border-radius: 4px;
     margin-top: 2vh;
     color: #000000;
-    transition: height .5s,width .5s;
-    
+    transition: all .5s;
+
 }
 
-.faqelementcontainer:nth-child(3){
+.faqelementcontainer:nth-child(3) {
     width: 55vw;
     height: 18vh;
 }
 
-.faqquestion{
-    padding-top:0.8vh;
-    padding-bottom:0.8vh;
+.faqquestion {
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
     font-weight: bold;
 }
 
-.faqanswer{
+.faqanswer {
     display: none;
 }
 
-.plusicon{
+.plusicon {
     float: right;
     margin-right: 1vw;
     position: relative;
