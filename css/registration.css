@@ -1,0 +1,152 @@
+.registrationContainer {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0% 16%;
+    box-sizing: border-box;
+    font-family: poppins;
+    background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
+}
+
+.registerAsStudentContainer {
+    width: 40%;
+    float: left;
+}
+
+.registerAsSchoolContainer {
+    width: 40%;
+    float: right;
+}
+
+.registerAsSchoolContainer input {
+    margin: 4px 0;
+}
+
+.registerStudentHeading {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    font-family: Playfair-Bold;
+    font-size: 2em;
+}
+
+.registerSchoolHeading {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    font-family: Playfair-Bold;
+    font-size: 2em;
+}
+
+.registrationForm input, select, span {
+    margin-bottom: 10px;
+}
+
+.cancelButton {
+    background: black;
+    color: white;
+}
+
+.registrationForm input[type="radio"] {
+    display: none;
+}
+
+.registrationForm input[type="radio"]:checked + label {
+    background-color: #FFFDF2;
+    color: black;
+    border-color: #F2CF19;
+}
+
+.registrationCheckContainer {
+    display: flex;
+    width: 100%;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButton {
+    background: #F2CF19;
+}
+
+.registerCheckbox {
+    padding: 8px;
+    font-size: 0.9em;
+    border: 1.5px solid #9E9E9E;
+    margin: 0 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.registerCheckbox:hover {
+    background: #FFFDF2;
+}
+
+.registrationForm input {
+    height: 4vh;
+    padding-left: 0.5vw;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    width: 100%;
+}
+
+registerAsSchoolContainer input {
+    margin: 2px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.registrationForm label {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.buttonContainer input {
+    width: 20%;
+    padding: 8px;
+    height: auto;
+    margin: 3px;
+    border: none;
+    font-family: poppins;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.buttonContainer input:hover {
+    transform: scale(1.1);
+}
+
+.grouping {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registrationInputContainer label {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registrationInputContainer input {
+    /* width: 20%; */
+}
+
+.registrationInputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder {
+    font-family: Poppins;
+}
