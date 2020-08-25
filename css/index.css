@@ -6,6 +6,11 @@ body {
     scroll-behavior: smooth;
 }
 
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 .landingContainer {
     display: flex;
     position: fixed;
@@ -66,6 +71,7 @@ body {
     box-shadow: 0px 8px 12px #1A1A1A29;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
     transition: 0.1s;
 }
 
@@ -121,7 +127,7 @@ body {
 .background {
     position: absolute;
     height: 100%;
-    width: 100vw;
+     width: 100vw;
     box-sizing: border-box;
     /* z-index: -1; */
     /* left: 0; */

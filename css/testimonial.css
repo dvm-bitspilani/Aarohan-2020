@@ -1,17 +1,16 @@
 .testimonialContainer {
-
-    width: 100%;
-    height: 117vh;
-    background-image: url("../assets/img/Path 316.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    padding: 9% 16% 3%;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
-
+overflow: hidden;
+width: 100%;
+height: 117vh;
+background-image: url("../assets/img/Path 316.png");
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+position: relative;
+flex-wrap: wrap;
+padding: 9% 16% 3%;
+box-sizing: border-box;
+font-family: poppins, sans-serif;
 }
 
 .testimonialback {
@@ -63,4 +62,34 @@
 
 .testimonialBodyName {
 
+}
+
+.swiper-container {
+    width: 100%;
+    height: 77%;
+    background: none;
+}
+
+.swiper-slide {
+    overflow: visible;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-family: poppins;
+    flex-direction: column;
 }

@@ -1,0 +1,142 @@
+@media only screen and (max-width: 600px) {
+    .background {
+        display: none;
+    }
+
+    .aboutQuote {
+
+        padding: 5% 0;
+
+    }
+
+    .aboutContainer {
+
+        height: auto;
+
+        padding: 10% 7%;
+
+    }
+
+    .landingBodyContainer {
+
+        font-size: 0.75em;
+
+        margin: 0 0 0;
+
+    }
+
+    .landingContainer {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 20% 0% 6%;
+
+        background-image: url(../assets/img/mobileBack.png);
+
+        background-size: inherit;
+
+        background-position-y: 6%;
+
+        background-position-x: 37%;
+
+    }
+
+    .landingFooter {
+
+        position: absolute;
+
+        bottom: 3%;
+
+        padding: 0 5%;
+
+        color: white;
+
+        font-size: 75%;
+
+    }
+
+    .landingSubHeading {
+        transform: scale(0.8);
+    }
+
+    .landingBack {
+
+        background: transparent linear-gradient(180deg, #ffffff00 0%, #00000078 100%);
+
+        filter: none;
+    }
+
+    .registrationContainer {
+
+        height: auto;
+
+        flex-direction: column;
+
+        flex-wrap: wrap;
+
+    }
+
+    .registerAsSchoolContainer {
+
+        float: left;
+
+        width: 100%;
+
+    }
+
+    .registerAsStudentContainer {
+
+        width: 100%;
+    }
+
+    #navBar {
+
+        width: 100%;
+
+    }
+
+    .navHeader {
+
+        padding: 12px 17px;
+
+    }
+
+    .hamburger {
+
+        overflow: visible;
+    }
+
+    .testimonialContainer {
+
+        height: 100vh;
+
+        background-color: #fafafa;
+
+        flex-direction: column;
+
+        box-sizing: border-box;
+
+        justify-content: space-between;
+
+        padding-bottom: 39%;
+
+    }
+
+    .testimonialBodyHead {
+
+        margin: 0;
+
+    }
+
+    .testimonialBodyName {
+
+        font-weight: bold;
+
+    }
+
+    .testimonialBodyText {
+
+    }
+}
