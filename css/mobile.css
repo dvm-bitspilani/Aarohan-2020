@@ -188,4 +188,24 @@
         margin-bottom: 10px;
 
     }
+
+    .registerCheckbox {
+
+        padding: 6px 0;
+    }
+
+    .registrationInputContainer label {
+
+        font-size: 0.75em;
+
+        text-align: center;
+    }
+
+    .swiper-container {
+        display: flex;
+    }
+
+    .testimonialBodyContainer {
+        display: none;
+    }
 }
