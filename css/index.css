@@ -9,6 +9,8 @@ body {
 * {
     box-sizing: border-box;
     overflow-x: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .aboutBody {
     padding-bottom: 8%;

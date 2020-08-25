@@ -10,6 +10,7 @@
     width: 32px;
     flex-direction: column;
     cursor: pointer;
+    overflow: visible;
 }
 
 .hamburgerLines {
