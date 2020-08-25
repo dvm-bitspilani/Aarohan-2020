@@ -127,8 +127,10 @@
     }
 
     .testimonialBodyHead {
-margin: 0 0 12%;
-}
+
+margin: 0 0 12%;
+
+}
 
     .testimonialBodyName {
 
@@ -205,5 +207,8 @@
 
     .testimonialBodyContainer {
         display: none;
+    }
+    .buttonContainer input {
+        width: auto;
     }
 }

@@ -111,7 +111,7 @@ registerAsSchoolContainer input {
 }
 
 .buttonContainer input {
-    /* width: 25%; */
+     width: 25%;
     padding: 8px;
     height: auto;
     margin: 3px;

@@ -8,6 +8,7 @@
     font-family: poppins;
     background-color: #fafafa;
     transition: 0.2s;
+    overflow: hidden;
 }
 
 .aboutHeading {
