@@ -69,11 +69,16 @@
     }
 
     .registrationContainer {
-height: auto;
-flex-direction: column;
-flex-wrap: wrap;
-padding-bottom: 10%;
-}
+
+        height: auto;
+
+        flex-direction: column;
+
+        flex-wrap: wrap;
+
+        padding-bottom: 10%;
+
+    }
 
     .registerAsSchoolContainer {
 
@@ -144,14 +149,20 @@
     }
 
     .contactElement {
-font-family: gilroy-medium;
-}
+
+        font-family: gilroy-medium;
+
+    }
 
     .contactElements {
-font-size: 0.9em;
-font-family: gilroy-light;
-line-height: 1.5;
-}
+
+        font-size: 0.9em;
+
+        font-family: gilroy-light;
+
+        line-height: 1.5;
+
+    }
 
     .registerElement {
 
@@ -159,15 +170,22 @@
 
     }
 
-    .registerElement h2{
-        text-align: left;
+    .registerElement h2 {
+
+        text-align: left;
     }
 
     .registerContact {
-font-family: gilroy-light;
-font-size: 0.9em;
-text-align: left;
-line-height: 1.5;
-margin-bottom: 10px;
-}
+
+        font-family: gilroy-light;
+
+        font-size: 0.9em;
+
+        text-align: left;
+
+        line-height: 1.5;
+
+        margin-bottom: 10px;
+
+    }
 }
