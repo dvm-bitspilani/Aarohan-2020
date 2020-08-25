@@ -69,14 +69,11 @@
     }
 
     .registrationContainer {
-
-        height: auto;
-
-        flex-direction: column;
-
-        flex-wrap: wrap;
-
-    }
+height: auto;
+flex-direction: column;
+flex-wrap: wrap;
+padding-bottom: 10%;
+}
 
     .registerAsSchoolContainer {
 
@@ -139,4 +136,38 @@
     .testimonialBodyText {
 
     }
+
+    .footer {
+
+        flex-direction: column;
+
+    }
+
+    .contactElement {
+font-family: gilroy-medium;
+}
+
+    .contactElements {
+font-size: 0.9em;
+font-family: gilroy-light;
+line-height: 1.5;
+}
+
+    .registerElement {
+
+        width: 100%;
+
+    }
+
+    .registerElement h2{
+        text-align: left;
+    }
+
+    .registerContact {
+font-family: gilroy-light;
+font-size: 0.9em;
+text-align: left;
+line-height: 1.5;
+margin-bottom: 10px;
+}
 }

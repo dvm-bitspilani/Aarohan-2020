@@ -1,16 +1,10 @@
 .footer {
-
-    color: white;
-
-    background: black;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    font-family: poppins;
-
-    padding: 5% 14%;
+color: white;
+background: #111111;
+display: flex;
+justify-content: space-between;
+font-family: poppins;
+padding: 5% 14%;
 }
 
 .contactElement {
