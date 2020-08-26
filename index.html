@@ -25,17 +25,17 @@
     </div>
 </div>
 <div id="navBar">
-    <div class="navElements">Home</div>
-    <div class="navElements">About Us</div>
-    <div class="navElements">Results</div>
-    <div class="navElements">Answer Key</div>
-    <div class="navElements">FAQs</div>
-    <div class="navElements">Contact Us</div>
+    <a href="#landingContainer"><div class="navElements">Home</div></a>
+    <a href="#aboutContainer"><div class="navElements">About Us</div></a>
+    <a href="#"><div class="navElements">Results</div></a>
+    <a href="#"><div class="navElements">Answer Key</div></a>
+    <a href="#faqContainer"><div class="navElements">FAQs</div></a>
+    <a href="#footer"><div class="navElements">Contact Us</div></a>
 </div>
 <div class="wrapper" onclick="closeNav()">
-    <div class="landingContainer">
+    <div class="landingContainer" id="landingContainer">
         <div class="landingBack"></div>
-        <div class="landingBodyContainer">
+        <div class="landingBodyContainer" id="landingBodyContainer">
             <div class="landingHeading">
                 Aarohan 2020
             </div>
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="aboutContainer">
+    <div class="aboutContainer" id="aboutContainer">
         <div class="background">
             <img src="assets/img/Group%2097.png" style="
                         position: relative;
@@ -247,7 +247,7 @@
             </div>
         </div>
     </div>
-    <div class="faqContainer">
+    <div class="faqContainer" id="faqContainer">
         <div class="faqHeading">
             Frequently Asked Questions
         </div>
@@ -421,7 +421,7 @@
             </form>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="contactElement">
             <h2>Contact Us</h2>
             <div class="contactElements">Name<br>Designation<br>abcd.xyz@gmail.com</div>

@@ -8,14 +8,30 @@ var alreadyOpen = [];
 for (var i = 0; i < faqcontainer.length; i++) {
     alreadyOpen.push(false);
 }
-
-window.addEventListener('resize',function(){
-    if(window.innerWidth<900)
-        containerheight=8;
-    else
-        containerheight=5;
-})
 var containerheight = 5;
+window.addEventListener('resize',function(){
+    if(window.innerWidth<1054)
+    {    
+        containerheight=8;
+        for (var i = 0; i < faqcontainer.length; i++) {
+            if(alreadyOpen[i])
+                faqcontainer[i].style.height = "18vh";  
+            else
+                faqcontainer[i].style.height = containerheight + "vh";
+        }
+    }
+    else
+    {   containerheight=5;
+        for (var i = 0; i < faqcontainer.length; i++) {
+            if(alreadyOpen[i])
+                faqcontainer[i].style.height = "18vh";  
+            else
+                faqcontainer[i].style.height = containerheight + "vh";
+        }
+    }
+    console.log(containerheight);
+})
+
 
 faqcontainer[0].addEventListener('click', function () {
     if (!alreadyOpen[0]) {

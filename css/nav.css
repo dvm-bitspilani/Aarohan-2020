@@ -47,3 +47,8 @@
     color: white;
     font-family: poppins, serif;
 }
+
+a{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
