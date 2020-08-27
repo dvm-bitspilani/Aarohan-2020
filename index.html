@@ -49,12 +49,12 @@
             </div>
         </div>
         <div class="landingFooter">
-            <a href="#registrationContainer">
+            <a href="#registerAsStudentContainer">
                 <div class="landingFooterElements">
                     Register as a student
                 </div>
             </a>
-            <a href="#registrationContainer">
+            <a href="#registerAsSchoolContainer">
                 <div class="landingFooterElements">
                     Register as school
                 </div>
@@ -344,7 +344,7 @@
         </div>
     </div>
     <div class="registrationContainer" id="registrationContainer">
-        <div class="registerAsStudentContainer">
+        <div class="registerAsStudentContainer" id="registerAsStudentContainer">
             <div class="registerStudentHeading">
                 Register As student
             </div>
@@ -376,13 +376,16 @@
                         Class 12
                     </label>
                 </div>
-                <label style="width: 100%">
+                <label style="width: 45%">
+                    State
+                    <select name="state" class="states order-alpha" id="stateId">
+                        <option value="">Select State</option>
+                    </select>
+                </label>
+                <label style="width: 45%">
                     City
-                    <select id="city" name="city">
-                        <option value="jaipur">jaipur</option>
-                        <option value="deli">delhi</option>
-                        <option value="mumbai">mumbai</option>
-                        <option value="abc">abc</option>
+                    <select name="city" class="cities order-alpha" id="cityId">
+                        <option value="">Select City</option>
                     </select>
                 </label>
                 <label for="email">Email:</label>
@@ -393,7 +396,7 @@
                 </div>
             </form>
         </div>
-        <div class="registerAsSchoolContainer">
+        <div class="registerAsSchoolContainer" id="registerAsSchoolContainer">
             <div class="registerSchoolHeading">
                 Register As School
             </div>
@@ -404,15 +407,18 @@
                 <label>School POC Name
                     <input id="passid" name="passid" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
                 </label>
-                    <label>
-                        City
-                        <select id="city" name="city">
-                            <option value="jaipur">jaipur</option>
-                            <option value="deli">delhi</option>
-                            <option value="mumbai">mumbai</option>
-                            <option value="abc">abc</option>
-                        </select>
-                    </label>
+                <label style="width: 45%">
+                    State
+                    <select name="state" class="states order-alpha" id="stateId">
+                        <option value="">Select State</option>
+                    </select>
+                </label>
+                <label style="width: 45%">
+                    City
+                    <select name="city" class="cities order-alpha" id="cityId">
+                        <option value="">Select City</option>
+                    </select>
+                </label>
                     <label>
                         Contact No. Of In charge
                         <input name="coi" placeholder="8545811530" size="50" type="text"/>
@@ -469,6 +475,8 @@
     </div>
 </div>
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="//geodata.solutions/includes/statecity.js"></script>
 <script src="swiper/swiper-bundle.min.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/index.js"></script>
