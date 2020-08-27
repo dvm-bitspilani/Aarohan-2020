@@ -6,7 +6,7 @@
     padding: 0% 16% 5%;
     box-sizing: border-box;
     font-family: poppins;
-    background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
+    background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 200%);
 }
 
 .registerAsStudentContainer {
@@ -15,8 +15,11 @@
 }
 
 .registerAsSchoolContainer {
+    padding-bottom: 5%;
     width: 40%;
     float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 .registerAsSchoolContainer input, select {
