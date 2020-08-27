@@ -60,7 +60,9 @@ font-size: 0.9em;
         font-size: 75%;
 
     }
-
+    .landingFooterElements{
+        color:white;
+    }
     .landingSubHeading {
         transform: scale(0.8);
     }
