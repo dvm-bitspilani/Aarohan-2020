@@ -1,9 +1,9 @@
 .registrationContainer {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: block;
     position: relative;
-    padding: 0% 16%;
+    padding: 0% 16% 5%;
     box-sizing: border-box;
     font-family: poppins;
     background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
@@ -67,6 +67,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .submitButton {
@@ -93,6 +94,7 @@
     border: 1px solid #707070;
     border-radius: 4px;
     width: 100%;
+    font-family: poppins;
 }
 
 registerAsSchoolContainer input {
@@ -112,18 +114,19 @@ registerAsSchoolContainer input {
 
 .buttonContainer input {
      width: 25%;
-    padding: 8px;
-    height: auto;
-    margin: 3px;
-    border: none;
-    font-family: poppins;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.1s;
+     padding: 8px;
+     height: auto;
+     margin: 3px;
+     border: none;
+     font-family: poppins;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.1s;
+     overflow: hidden;
 }
 
 .buttonContainer input:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .grouping {
@@ -140,6 +143,10 @@ registerAsSchoolContainer input {
 
 .registrationInputContainer input {
     /* width: 20%; */
+}
+
+input[type="number"] {
+    text-align: center;
 }
 
 .registrationInputContainer {

@@ -328,7 +328,9 @@
             </div>
             <form class="registrationForm" name='registration' onSubmit="return formValidation();">
                 <label for="name">Full Name</label>
-                <input name="name" size="12" type="text"/>
+                <input name="name" size="12" type="text" id="name"/>
+                <label for="father">Father's Name</label>
+                <input name="name" size="12" type="text" id="father"/>
                 <label for="school">School Name:</label>
                 <input name="address" size="50" type="text"/>
                 <label for="phone">Phone</label>
@@ -371,16 +373,14 @@
                 <label>School POC Name
                     <input id="passid" name="passid" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
                 </label>
-                <div class="grouping">
-                    <label style="width: 38%">
+                    <label>
                         City
                         <input name="username" placeholder="Jaipur" size="50" type="text"/>
                     </label>
-                    <label style="width: 56%">
+                    <label>
                         Contact No. Of In charge
                         <input name="coi" placeholder="8545811530" size="50" type="text"/>
                     </label>
-                </div>
                 <label>
                     Email
                     <input name="email" type="text">
@@ -406,11 +406,7 @@
                         <input name="c12" type="number"/>
                     </label>
                 </div>
-                <label style="width: 48%">
-                    Total No. Of Students
-                    <input name="tns" placeholder="1000" size="50" type="number"/>
-                </label>
-                <label style="width: 48%">
+                <label >
                     Total Amount to be Paid
                     <input name="tap" size="50" type="text"/>
                 </label>

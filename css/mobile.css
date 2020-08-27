@@ -5,17 +5,21 @@
 
     .aboutQuote {
 
-        padding: 5% 0;
+padding: 5% 0;
 
-    }
+/* font-size: 0.9em; */
+
+}
 
     .aboutContainer {
 
-        height: auto;
+height: auto;
 
-        padding: 10% 7%;
+padding: 10% 7%;
 
-    }
+font-size: 0.9em;
+
+}
 
     .landingBodyContainer {
 
