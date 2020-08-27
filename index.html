@@ -49,12 +49,16 @@
             </div>
         </div>
         <div class="landingFooter">
-            <div class="landingFooterElements">
-                Register as a student
-            </div>
-            <div class="landingFooterElements">
-                Register as school
-            </div>
+            <a href="#registrationContainer">
+                <div class="landingFooterElements">
+                    Register as a student
+                </div>
+            </a>
+            <a href="#registrationContainer">
+                <div class="landingFooterElements">
+                    Register as school
+                </div>
+            </a>
         </div>
     </div>
     <div class="aboutContainer" id="aboutContainer">
@@ -254,8 +258,11 @@
         <div class="faqbodycontainer">
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -265,8 +272,11 @@
             </div>
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -276,8 +286,11 @@
             </div>
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -287,8 +300,11 @@
             </div>
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -298,8 +314,11 @@
             </div>
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -309,8 +328,11 @@
             </div>
             <div class="faqelementcontainer">
                 <div class="faqquestion">
-                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies neque.
-                    <div class="plusicon"><i aria-hidden="true" class="fa fa-plus"></i></div>
+                    Q:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec ultricies nequw.                   
+                </div>
+                <div class="icon">
+                    <div class="verticalline"></div>
+                    <div class="horizontalline"></div>
                 </div>
                 <div class="faqanswer">
                     Sed a ex commodo, dictum arcu sed, ultrices massa. Praesent elit est, suscipit a quam in,
@@ -321,7 +343,7 @@
 
         </div>
     </div>
-    <div class="registrationContainer">
+    <div class="registrationContainer" id="registrationContainer">
         <div class="registerAsStudentContainer">
             <div class="registerStudentHeading">
                 Register As student
@@ -352,6 +374,15 @@
                         Class 12
                     </label>
                 </div>
+                <label style="width: 100%">
+                    City
+                    <select id="city" name="city">
+                        <option value="jaipur">jaipur</option>
+                        <option value="deli">delhi</option>
+                        <option value="mumbai">mumbai</option>
+                        <option value="abc">abc</option>
+                    </select>
+                </label>
                 <label for="email">Email:</label>
                 <input id="email" name="email" size="50" type="text"/>
                 <div class="buttonContainer">
@@ -372,9 +403,14 @@
                     <input id="passid" name="passid" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
                 </label>
                 <div class="grouping">
-                    <label style="width: 38%">
+                    <label style="width: 36%">
                         City
-                        <input name="username" placeholder="Jaipur" size="50" type="text"/>
+                        <select id="city" name="city">
+                            <option value="jaipur">jaipur</option>
+                            <option value="deli">delhi</option>
+                            <option value="mumbai">mumbai</option>
+                            <option value="abc">abc</option>
+                        </select>
                     </label>
                     <label style="width: 56%">
                         Contact No. Of In charge

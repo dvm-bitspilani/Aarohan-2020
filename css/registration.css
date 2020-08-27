@@ -19,8 +19,9 @@
     float: right;
 }
 
-.registerAsSchoolContainer input {
+.registerAsSchoolContainer input, select {
     margin: 4px 0;
+    font-family: Poppins;
 }
 
 .registerStudentHeading {
@@ -41,6 +42,7 @@
 
 .registrationForm input, select, span {
     margin-bottom: 10px;
+    font-family: Poppins;
 }
 
 .cancelButton {
@@ -87,16 +89,17 @@
     background: #FFFDF2;
 }
 
-.registrationForm input {
+.registrationForm input, select {
     height: 4vh;
     padding-left: 0.5vw;
     border: 1px solid #707070;
     border-radius: 4px;
     width: 100%;
+    font-family: Poppins;
 }
 
-registerAsSchoolContainer input {
-    margin: 2px;
+.registerAsSchoolContainer input {
+    /* margin: 2px; */
 }
 
 .registrationForm {

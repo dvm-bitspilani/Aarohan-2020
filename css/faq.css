@@ -22,10 +22,6 @@
 
 .faqelementcontainer {
     overflow: hidden;
-    width: 66vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     padding-left: 0.5vw;
     background-color: #FFFFFF;
@@ -36,12 +32,10 @@
     transition: all .5s;
 }
 
-.faqelementcontainer:nth-child(3) {
-    width: 55vw;
-    height: 18vh;
-}
 
 .faqquestion {
+    display: inline-block;
+    width: 95%;
     padding-top: 0.8vh;
     font-weight: bold;
     overflow: hidden;
@@ -49,10 +43,30 @@
 
 .faqanswer {
     display: none;
+    overflow: hidden;
 }
 
-.plusicon {
+.icon {
+    width: 5%;
     float: right;
-    margin-right: 1vw;
+    padding-top: 1vh;
     position: relative;
+}
+.horizontalline{
+    position: absolute;
+    top: 13.5px;
+    height: 4px;
+    width: 16px;
+    background: black;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.verticalline{
+    position: absolute;
+    left: 6px;
+    height: 16px;
+    width: 4px;
+    background: black;
+    border-radius: 2px;
+    transition: 0.2s;
 }
