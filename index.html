@@ -349,6 +349,7 @@
                 Register As student
             </div>
             <form class="registrationForm" name='registration' onSubmit="return formValidation();">
+                
                 <label for="name">Full Name</label>
                 <input name="name" size="12" type="text" id="name"/>
                 <label for="father">Father's Name</label>
@@ -378,15 +379,11 @@
                 </div>
                 <label style="width: 45%">
                     State
-                    <select name="state" class="states order-alpha" id="stateId">
-                        <option value="">Select State</option>
-                    </select>
+                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
                 </label>
                 <label style="width: 45%">
                     City
-                    <select name="city" class="cities order-alpha" id="cityId">
-                        <option value="">Select City</option>
-                    </select>
+                    <select id ="state" class="form-control" required></select>
                 </label>
                 <label for="email">Email:</label>
                 <input id="email" name="email" size="50" type="text"/>
@@ -409,20 +406,16 @@
                 </label>
                 <label style="width: 45%">
                     State
-                    <select name="state" class="states order-alpha" id="stateId">
-                        <option value="">Select State</option>
-                    </select>
+                    <select onchange="print_city2('state', this.selectedIndex);" id="sts2" name ="stt2" class="form-control" required></select>
                 </label>
                 <label style="width: 45%">
                     City
-                    <select name="city" class="cities order-alpha" id="cityId">
-                        <option value="">Select City</option>
-                    </select>
+                    <select id ="state2" class="form-control2" required></select>
                 </label>
-                    <label>
+                <label>
                         Contact No. Of In charge
                         <input name="coi" placeholder="8545811530" size="50" type="text"/>
-                    </label>
+                </label>
                 <label>
                     Email
                     <input name="email" type="text">
@@ -475,8 +468,10 @@
     </div>
 </div>
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="//geodata.solutions/includes/statecity.js"></script>
+<script src="js/cities.js"></script>
+<script language="javascript">print_state("sts");</script>
+<script src="js/cities2.js"></script>
+<script language="javascript">print_state2("sts2");</script>
 <script src="swiper/swiper-bundle.min.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/index.js"></script>

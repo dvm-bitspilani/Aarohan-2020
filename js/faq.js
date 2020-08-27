@@ -70,7 +70,6 @@ function resizeFunc(){
         faqcontainer[i].style.width = "66vw"; 
         }
     }
-    console.log("Asfa");
 }    
 
 resizeFunc();
