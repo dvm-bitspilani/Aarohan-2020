@@ -29,9 +29,10 @@
     display: flex;
     padding: 10%;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     width: 33%;
     height: 100%;
     /* z-index: 1; */
