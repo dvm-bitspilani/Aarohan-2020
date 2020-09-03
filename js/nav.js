@@ -9,6 +9,7 @@ const openCloseNav = () => {
         hamLine[0].style = initialStyle
         hamLine[2].style = initialStyle
         isOpened = false
+        document.body.style.overflowY = 'visible'
     } else {
         navBar.style.transform = 'translateX(0%)'
         hamLine[0].style.transform = "rotate(45deg)"
@@ -18,6 +19,7 @@ const openCloseNav = () => {
         hamLine[2].style.backgroundColor = 'white'
         hamLine[2].style.marginTop = '-14px'
         isOpened = true;
+        document.body.style.overflowY = 'hidden'
     }
 }
 
