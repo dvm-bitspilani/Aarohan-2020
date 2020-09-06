@@ -13,12 +13,14 @@
 
 .aboutHeading {
     width: 100%;
-    font-family: Playfair-Bold;
-    font-size: 2.5em;
+    font-family: poppins-semibold;
+    font-size: 2em;
+    margin-block-end: 3%;
 }
 
 .aboutQuote {
     padding: 0 14%;
     text-align: center;
     font-weight: 800;
+    margin-block-end: 2.5%;
 }

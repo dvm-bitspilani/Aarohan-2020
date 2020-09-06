@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
     font-family: 'Poppins-Bold';
     src: url(Poppins/Poppins-Bold.ttf);
 }

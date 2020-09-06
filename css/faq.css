@@ -16,8 +16,8 @@
     width: 100%;
     margin-top: 15vh;
     margin-bottom: 7vh;
-    font-family: Playfair-Bold;
-    font-size: 2.5em;
+    font-family: poppins-semibold;
+    font-size: 2em;
 }
 
 .faqelementcontainer {
@@ -30,6 +30,7 @@
     margin-top: 2vh;
     color: #000000;
     transition: all .5s;
+    font-size: 0.9em;
 }
 
 
@@ -39,6 +40,7 @@
     padding-top: 0.8vh;
     font-weight: bold;
     overflow: hidden;
+    /* font-size: 0.9em; */
 }
 
 .faqanswer {
