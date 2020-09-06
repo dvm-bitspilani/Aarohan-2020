@@ -32,7 +32,8 @@
         <a href="#faqContainer"><div class="navElements">FAQs</div></a>
         <a href="#footer"><div class="navElements">Contact Us</div></a>
     </div>
-<div class="wrapper" onclick="closeNav()">
+</div>
+<div class="wrapper" onclick="closeNav()" id="wrapper">
     <div class="landingContainer" id="landingContainer">
         <div class="landingBack"></div>
         <div class="landingBodyContainer" id="landingBodyContainer">
@@ -407,7 +408,7 @@
                 Register As student
             </div>
             <form class="registrationForm" name='registration' onSubmit="return formValidation();">
-                
+
                 <label for="name">Full Name</label>
                 <input name="name" size="12" type="text" id="name"/>
                 <label for="father">Father's Name</label>
@@ -464,7 +465,7 @@
                 </label>
                 <label style="width: 45%">
                     State
-                    <select onchange="print_city2('state', this.selectedIndex);" id="sts2" name ="stt2" class="form-control" required></select>
+                    <select onchange="print_city2('state2', this.selectedIndex);" id="sts2" name ="stt2" class="form-control" required></select>
                 </label>
                 <label style="width: 45%">
                     City
@@ -528,7 +529,6 @@
 </body>
 <script src="js/cities.js"></script>
 <script language="javascript">print_state("sts");</script>
-<script src="js/cities2.js"></script>
 <script language="javascript">print_state2("sts2");</script>
 <script src="swiper/swiper-bundle.min.js"></script>
 <script src="js/nav.js"></script>
