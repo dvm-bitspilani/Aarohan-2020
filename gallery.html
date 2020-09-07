@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gallery</title>
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/gallery.css"/> 
+</head>
+    <body>
+        <div class="navHeader">
+            <div class="hamburger" onclick="openCloseNav()">
+                <div class="hamburgerLines"></div>
+                <div class="hamburgerLines"></div>
+                <div class="hamburgerLines"></div>
+            </div>
+        </div>
+        <div id="navBar">
+            <a href="#landingContainer"><div class="navElements">Home</div></a>
+            <a href="#aboutContainer"><div class="navElements">About Us</div></a>
+            <a href="#"><div class="navElements">Results</div></a>
+            <a href="#"><div class="navElements">Answer Key</div></a>
+            <a href="#faqContainer"><div class="navElements">FAQs</div></a>
+            <a href="#footer"><div class="navElements">Contact Us</div></a>
+        </div>
+        <div class="carousel">
+            <div class="leftImages">your content</div>
+            <div class="rightImages">your content</div>
+            <div class="leftImages">your content</div>
+            <div class="rightImages">your content</div>
+            <div class="leftImages">your content</div>
+            <div class="rightImages">your content</div>
+            
+          </div>
+        
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="js/slick.min.js"></script>
+        
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                arrows: true,
+                slidesToShow: 2,
+                slidesToScroll: 3
+              });
+            });
+          </script>
+        <script src="js/nav.js"></script>
+    </body>
+</html>

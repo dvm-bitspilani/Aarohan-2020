@@ -1,0 +1,20 @@
+body{
+    overflow-x: hidden;
+}
+.carousel{
+    margin-top: 10vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+.leftImages{
+    width: 40;
+}
+.rightImages{
+    width: 40;
+}
+button{
+    background-color: red;
+}
+.slick-prev:before, .slick-next:before{
+    background-color: black;
+}
