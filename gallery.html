@@ -18,21 +18,37 @@
             </div>
         </div>
         <div id="navBar">
-            <a href="#landingContainer"><div class="navElements">Home</div></a>
-            <a href="#aboutContainer"><div class="navElements">About Us</div></a>
+            <a href="./index.html"><div class="navElements">Home</div></a>
             <a href="#"><div class="navElements">Results</div></a>
             <a href="#"><div class="navElements">Answer Key</div></a>
-            <a href="#faqContainer"><div class="navElements">FAQs</div></a>
-            <a href="#footer"><div class="navElements">Contact Us</div></a>
         </div>
+        
+        <div class="galleryheading">Our gallery</div>
         <div class="carousel">
-            <div class="leftImages">your content</div>
-            <div class="rightImages">your content</div>
-            <div class="leftImages">your content</div>
-            <div class="rightImages">your content</div>
-            <div class="leftImages">your content</div>
-            <div class="rightImages">your content</div>
-            
+            <div class="leftImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
+            <div class="rightImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
+            <div class="leftImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
+            <div class="rightImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
+            <div class="leftImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
+            <div class="rightImages">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="topImg">
+              <img src="./assets/img/person-holding-orange-pen-1925536.png" class="bottomImg">
+            </div>
           </div>
         
           <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -40,7 +56,14 @@
           <script type="text/javascript" src="js/slick.min.js"></script>
         
           <script type="text/javascript">
-            $(document).ready(function(){
+          function resizefunc(){
+            if(window.innerWidth<1000)
+            {
+              console.log('xjcssssbdj');
+              $('.carousel').slick('unslick');
+            }
+            else{
+              $(document).ready(function(){
               $('.carousel').slick({
                 dots: true,
                 infinite: true,
@@ -49,6 +72,11 @@
                 slidesToScroll: 3
               });
             });
+            }
+          }
+          
+            
+            resizefunc();
           </script>
         <script src="js/nav.js"></script>
     </body>

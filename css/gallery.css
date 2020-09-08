@@ -1,20 +1,76 @@
 body{
     overflow-x: hidden;
 }
-.carousel{
+.galleryheading{
+    width: 60vw;
     margin-top: 10vh;
-    width: 80vw;
-    margin-left: 10vw;
+    font: normal normal bold 30px/36px Inter;
+    font-family: poppins, serif;
+    margin-left: 20vw;
 }
+.carousel{
+    width: 70vw;
+    margin-left: 15vw;
+}
+
 .leftImages{
-    width: 40;
+    width: 25vw;
 }
 .rightImages{
-    width: 40;
+    width: 25vw;
 }
-button{
-    background-color: red;
+img{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 25vw;
 }
 .slick-prev:before, .slick-next:before{
-    background-color: black;
+    color: black;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    padding: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media all and (max-width: 1000px){
+    .galleryheading{
+        width: 70vw;
+        margin-top: 10vh;
+        font: normal normal bold 30px/36px Inter;
+        font-family: poppins, serif;
+        margin-left: 15vw;
+    }
+    img{
+        margin-top: 2vh;
+        width: 70vw;
+    }
+    .carousel{
+        width: 70vw;
+        margin-left: 10vw;
+    }
+    
+    .leftImages{
+        width: 70vw;
+    }
+    .rightImages{
+        width: 70vw;
+    }
+    .slick-prev:before, .slick-next:before{
+        display: none;
+    }
 }
