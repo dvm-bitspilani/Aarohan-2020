@@ -1,0 +1,176 @@
+.landingContainer {
+    font-family: Poppins;
+    display: flex;
+    padding: 5% 0 5% 5%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.textContainer {
+
+    padding-right: 5%;
+
+    width: 100%;
+}
+
+.headingContainer {
+
+}
+
+.headingContainer h1 {
+
+    margin: 0;
+
+    text-align: center;
+}
+
+.textContainer h2 {
+
+}
+
+.textContainer p {
+
+    padding-right: 26%;
+}
+
+.imageContainer {
+
+width: 31%;
+
+height: 45vh;
+}
+
+.hmvContainer {
+
+    font-family: poppins;
+
+    display: flex;
+
+    padding: 10% 30% 10% 5%;
+
+    font-size: 0.9em;
+
+    color: #616161;
+}
+
+.hmvElements {
+
+    padding: 5%;
+}
+
+.hmvElements h1 {
+
+    margin: 0;
+
+    color: #4D4D4D;
+}
+
+.hmvElements h2 {
+
+    margin: 0;
+
+    color: #3E3E3E;
+}
+
+.hmvElements h2::after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #3E3E3E;
+    display: block;
+    border-radius: 2.5px;
+    margin-bottom: 6%;
+}
+
+.detailsContainer {
+    font-family: Poppins;
+    text-align: center;
+    padding: 0 12%;
+}
+
+.detailsContainer h1 {
+
+}
+
+.detailsContainer p {
+
+    margin-bottom: 5%;
+
+    color: #616161;
+}
+
+.socialMedia {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.socialElements {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: 1px solid black;
+
+    margin: 1%;
+}
+
+.imageP {
+    position: absolute;
+    left: 53%;
+    top: 57%;
+}
+
+
+body {
+    background: #F2F2F2;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+@media all and (max-width: 600px) {
+    .landingContainer {
+
+        flex-direction: column;
+
+        width: 100vw;
+
+        padding: 14% 5% 0;
+
+        box-sizing: border-box;
+
+    }
+
+    .textContainer p{
+        
+padding-right: 5%;
+    }
+
+    .imageP {
+        position: relative;
+        left: 130px;
+        top: -130px;
+    }
+
+    .imageContainer {
+        
+/* transform: scale(0.5); */
+        
+/* width: 200vw; */
+        
+display: none;
+    }
+
+    .hmvContainer {
+        
+padding-right: 5%;
+        
+font-size: 0.8em;
+    }
+
+    body {
+        width: auto;
+    }
+}
