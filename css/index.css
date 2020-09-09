@@ -28,10 +28,12 @@ a{
     height: 100vh;
     background-image: url(../assets/img/landingBack.png);
     background-attachment: fixed;
-    background-position: -1% -21px;
+    background-position: -1 -21px;
     background-size: cover;
     justify-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
     /* z-index: -1; */
 }
 
