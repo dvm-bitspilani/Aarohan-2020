@@ -395,45 +395,45 @@
             <div class="registerStudentHeading">
                 Register As student
             </div>
-            <form class="registrationForm" name='registration' onSubmit="return formValidation();">
+            <form class="registrationForm" name='studentreg' >
 
                 <label for="name">Full Name</label>
-                <input name="name" size="12" type="text" id="name"/>
+                <input name="full_name" size="12" type="text" id="full_name"/>
                 <label for="father">Father's Name</label>
-                <input name="name" size="12" type="text" id="father"/>
+                <input name="fathers_name" size="12" type="text" id="fathers_name"/>
                 <label for="school">School Name:</label>
-                <input name="address" size="50" type="text"/>
+                <input name="school_name" size="50" type="text"/>
                 <label for="phone">Phone</label>
-                <input name="phone" type="text"/>
+                <input name="contact_no" type="text"/>
                 <label>Class</label>
                 <div class="registrationCheckContainer">
-                    <input id="class9" name="class" type="radio" value="class9"/>
+                    <input id="class9" name="studying_in_class" type="radio" value="class9"/>
                     <label class="registerCheckbox" for="class9">
                         Class 9
                     </label>
-                    <input checked id="class10" name="class" type="radio" value="class9"/>
+                    <input checked id="class10" name="studying_in_class" type="radio" value="class9"/>
                     <label class="registerCheckbox" for="class10">
                         Class 10
                     </label>
-                    <input id="class11" name="class" type="radio" value="class9"/>
+                    <input id="class11" name="studying_in_class" type="radio" value="class9"/>
                     <label class="registerCheckbox" for="class11">
                         Class 11
                     </label>
-                    <input id="class12" name="class" type="radio" value="class9"/>
+                    <input id="class12" name="studying_in_class" type="radio" value="class9"/>
                     <label class="registerCheckbox" for="class12">
                         Class 12
                     </label>
                 </div>
                 <label style="width: 45%">
                     State
-                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="state" class="form-control" required></select>
                 </label>
                 <label style="width: 45%">
                     City
-                    <select id ="state" class="form-control" required></select>
+                    <select id ="state" class="form-control" required name="city"></select>
                 </label>
                 <label for="email">Email:</label>
-                <input id="email" name="email" size="50" type="text"/>
+                <input id="email" name="email_id" size="50" type="text"/>
                 <div class="buttonContainer">
                     <input class="cancelButton" name="cancel" type="button" value="Cancel"/>
                     <input class="submitButton" name="submit" type="submit" value="Submit"/>
@@ -444,28 +444,28 @@
             <div class="registerSchoolHeading">
                 Register As School
             </div>
-            <form class="registrationForm" name='registration' onSubmit="return formValidation();">
+            <form class="registrationForm" name='schoolreg' onSubmit="return formValidation();">
                 <label>School Name
-                    <input id="userID" name="userid" placeholder="Vidya Mandir Delhi" size="12" type="text"/>
+                    <input id="school_name" name="school_name" placeholder="Vidya Mandir Delhi" size="12" type="text"/>
                 </label>
                 <label>School POC Name
-                    <input id="passid" name="passid" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
+                    <input id="school_poc_name" name="school_poc_name" placeholder="Vidya Mandir Delhi" size="12" type="password"/>
                 </label>
                 <label style="width: 45%">
                     State
-                    <select onchange="print_city2('state2', this.selectedIndex);" id="sts2" name ="stt2" class="form-control" required></select>
+                    <select onchange="print_city2('state2', this.selectedIndex);" id="sts2" name ="state" class="form-control" required></select>
                 </label>
                 <label style="width: 45%">
                     City
-                    <select id ="state2" class="form-control2" required></select>
+                    <select id ="state2" class="form-control2" required name="city"></select>
                 </label>
                 <label>
                         Contact No. Of In charge
-                        <input name="coi" placeholder="8545811530" size="50" type="text"/>
+                        <input name="contact_no" placeholder="8545811530" size="50" type="text"/>
                 </label>
                 <label>
                     Email
-                    <input name="email" type="text">
+                    <input name="email_id" type="text">
                 </label>
                 <label>
                     Class-wise split up of no of students:
@@ -473,24 +473,24 @@
                 <div class="registrationInputContainer">
                     <label>
                         Class 9
-                        <input name="c9" type="number"/>
+                        <input name="ninth_class_students" type="number"/>
                     </label>
                     <label>
                         Class 10
-                        <input name="c10" type="number"/>
+                        <input name="tenth_class_students" type="number"/>
                     </label>
                     <label>
                         Class 11
-                        <input name="c11" type="number"/>
+                        <input name="eleventh_class_students" type="number"/>
                     </label>
                     <label>
                         Class 12
-                        <input name="c12" type="number"/>
+                        <input name="twelfth_class_students" type="number"/>
                     </label>
                 </div>
                 <label >
                     Total Amount to be Paid
-                    <input name="tap" size="50" type="text"/>
+                    <input name="total_amount_paid" size="50" type="text"/>
                 </label>
                 <div class="buttonContainer">
                     <input class="cancelButton" name="cancel" type="button" value="Cancel"/>
