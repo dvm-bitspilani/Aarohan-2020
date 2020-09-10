@@ -128,8 +128,12 @@
 var form = document.forms.namedItem("studentreg");
 form.addEventListener('submit', function(ev) {
     oData = new FormData(form);
+    var object = {};
+    oData.forEach((value, key) => {object[key] = value});
+    var json = JSON.stringify(object);
+    console.log(json)
     var oReq = new XMLHttpRequest();
-    oReq.open("POST", "https://www.bits-apogee.org/2021/studentreg", true);
+    oReq.open("POST", "https://bits-apogee.org/2021/aarohan/studentreg/", true);
     oReq.onload = function(oEvent) {
         if (oReq.status == 200) {
             alert('uploaded')
@@ -138,9 +142,11 @@ form.addEventListener('submit', function(ev) {
             alert('error')
         }
     };
-    oReq.send(oData);
+    oReq.send(json);
     ev.preventDefault();
-}, false);
+}
+,false
+);
 
 var form = document.forms.namedItem("schoolreg");
 form.addEventListener('submit', function(ev) {
