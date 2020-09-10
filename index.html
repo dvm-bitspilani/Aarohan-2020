@@ -395,31 +395,31 @@
             <div class="registerStudentHeading">
                 Register As student
             </div>
-            <form class="registrationForm" name='studentreg' >
+            <form class="registrationForm" name='studentreg'>
 
                 <label for="name">Full Name</label>
                 <input name="full_name" size="12" type="text" id="full_name"/>
                 <label for="father">Father's Name</label>
                 <input name="fathers_name" size="12" type="text" id="fathers_name"/>
                 <label for="school">School Name:</label>
-                <input name="school_name" size="50" type="text"/>
+                <input name="school_name" size="50" type="text" id="school_name"/>
                 <label for="phone">Phone</label>
-                <input name="contact_no" type="text"/>
+                <input name="contact_no" type="text" id="contact_no"/>
                 <label>Class</label>
                 <div class="registrationCheckContainer">
-                    <input id="class9" name="studying_in_class" type="radio" value="class9"/>
+                    <input id="9" name="studying_in_class" type="radio" value="9"/>
                     <label class="registerCheckbox" for="class9">
                         Class 9
                     </label>
-                    <input checked id="class10" name="studying_in_class" type="radio" value="class9"/>
+                    <input checked id="10" name="studying_in_class" type="radio" value="10"/>
                     <label class="registerCheckbox" for="class10">
                         Class 10
                     </label>
-                    <input id="class11" name="studying_in_class" type="radio" value="class9"/>
+                    <input id="11" name="studying_in_class" type="radio" value="11"/>
                     <label class="registerCheckbox" for="class11">
                         Class 11
                     </label>
-                    <input id="class12" name="studying_in_class" type="radio" value="class9"/>
+                    <input id="12" name="studying_in_class" type="radio" value="12"/>
                     <label class="registerCheckbox" for="class12">
                         Class 12
                     </label>
@@ -436,7 +436,7 @@
                 <input id="email" name="email_id" size="50" type="text"/>
                 <div class="buttonContainer">
                     <input class="cancelButton" name="cancel" type="button" value="Cancel"/>
-                    <input class="submitButton" name="submit" type="submit" value="Submit"/>
+                    <input class="submitButton" name="submit_student" type="submit" value="Submit"/>
                 </div>
             </form>
         </div>
@@ -444,7 +444,7 @@
             <div class="registerSchoolHeading">
                 Register As School
             </div>
-            <form class="registrationForm" name='schoolreg' onSubmit="return formValidation();">
+            <form class="registrationForm" name='schoolreg'>
                 <label>School Name
                     <input id="school_name" name="school_name" placeholder="Vidya Mandir Delhi" size="12" type="text"/>
                 </label>
