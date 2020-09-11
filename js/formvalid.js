@@ -1,3 +1,11 @@
+let obj = {
+  email_id: "test@test.com",
+  paid: "false",
+  reg_type: "test",
+}
+
+
+
 var form = document.forms.namedItem("studentreg");
 function handleForm(event) { 
     event.preventDefault();
@@ -5,7 +13,6 @@ function handleForm(event) {
     var object = {};
     oData.forEach((value, key) => {object[key] = value});
     var json = JSON.stringify(object);
-    console.log(json)
     fetch("https://bits-apogee.org/2021/aarohan/studentreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -16,14 +23,32 @@ function handleForm(event) {
       promise.then((response) => {
         if(response.message == "Student registered.")
         {
-
+          obj.email_id = response.email_id;
+          obj.paid = response.paid;
+          obj.reg_type = response.reg_type;
+          obj = JSON.stringify(obj);
+          console.log(obj)
+          fetch("https://bits-apogee.org/2021/aarohan/payment/", {
+            method: "POST",
+            headers: { "content-type": "application/json"},
+            body: obj,
+            })
+            .then((res) =>res.text())          
+            
+            .then(text => {
+              console.log(String(text))
+              var opened = window.open("")
+              opened.document.body.innerHTML = String(text)
+            })
+            .catch((err) => {
+            console.log(err)
+            })
         }
         alert(response.message)
       });
     })
     .catch((err) => {
     console.log(err.message)
-        // return alert(toString(err));
     })
 }
 form.addEventListener('submit', handleForm);
@@ -46,34 +71,35 @@ function handleForm2(event) {
     .then((res) => {
       const promise = Promise.resolve(res.json());
       promise.then((response) => {
-        if(response.message == "Student registered.")
+        if(response.message == "School registered.")
         {
+          obj.email_id = response.email_id;
+          obj.paid = response.paid;
+          obj.reg_type = response.reg_type;
+          obj = JSON.stringify(obj);
+          console.log(obj)
+          fetch("https://bits-apogee.org/2021/aarohan/payment/", {
+            method: "POST",
+            headers: { "content-type": "application/json"},
+            body: obj,
+            })
+            .then((res) =>res.text())          
+            
+            .then(text => {
+              console.log(String(text))
+              var opened = window.open("")
+              opened.document.body.innerHTML = String(text)
+            })
+            .catch((err) => {
+            console.log(err)
+            })
 
         }
-        console.log(response)
         alert(response.message)
       });
     })
     .catch((err) => {
     console.log(err.message)
-        // return alert(toString(err));
     })
 }
 form2.addEventListener('submit', handleForm2);
-
-// var form = document.forms.namedItem("schoolreg");
-// form.addEventListener('submit', function(ev) {
-//     oData = new FormData(form);
-//     var oReq = new XMLHttpRequest();
-//     oReq.open("POST", "", true);
-//     oReq.onload = function(oEvent) {
-//         if (oReq.status == 200) {
-//             alert('uploaded')
-//         } 
-//         else {
-//             alert('error')
-//         }
-//     };
-//     oReq.send(oData);
-//     ev.preventDefault();
-// }, false);
