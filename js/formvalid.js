@@ -73,6 +73,7 @@ function handleForm2(event) {
       promise.then((response) => {
         if(response.message == "School registered.")
         {
+          location.reload(true);
           obj.email_id = response.email_id;
           obj.paid = response.paid;
           obj.reg_type = response.reg_type;
@@ -87,8 +88,8 @@ function handleForm2(event) {
             
             .then(text => {
               console.log(String(text))
-              var opened = window.open("")
-              opened.document.body.innerHTML = String(text)
+              var opened = window.open("",'_blank')
+              opened.document.write(String(text))
             })
             .catch((err) => {
             console.log(err)
@@ -102,4 +103,10 @@ function handleForm2(event) {
     console.log(err.message)
     })
 }
+const cancel = () => {
+  location.reload(true);
+  console.log('ddffjdstae')
+}
 form2.addEventListener('submit', handleForm2);
+form2.addEventListener('cancel', cancel);
+form.addEventListener('cancel', cancel);
