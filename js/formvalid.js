@@ -37,8 +37,8 @@ function handleForm(event) {
             
             .then(text => {
               console.log(String(text))
-              var opened = window.open("")
-              opened.document.body.innerHTML = String(text)
+              var opened = window.open("",'_blank')
+              opened.document.write(String(text))
             })
             .catch((err) => {
             console.log(err)
