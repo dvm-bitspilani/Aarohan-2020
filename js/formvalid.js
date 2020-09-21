@@ -1,6 +1,6 @@
 let obj = {
   email_id: "test@test.com",
-  paid: "false",
+  //paid: "false",
   reg_type: "test",
 }
 
@@ -13,7 +13,7 @@ function handleForm(event) {
     var object = {};
     oData.forEach((value, key) => {object[key] = value});
     var json = JSON.stringify(object);
-    fetch("https://bits-apogee.org/2021/aarohan/studentreg/", {
+    fetch("http://bits-apogee.org/2021/aarohan/studentreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
@@ -24,11 +24,11 @@ function handleForm(event) {
         if(response.message == "Student registered.")
         {
           obj.email_id = response.email_id;
-          obj.paid = response.paid;
+          //obj.paid = response.paid;
           obj.reg_type = response.reg_type;
           obj = JSON.stringify(obj);
           console.log(obj)
-          fetch("https://bits-apogee.org/2021/aarohan/payment/", {
+          fetch("http://bits-apogee.org/2021/aarohan/payment/", {
             method: "POST",
             headers: { "content-type": "application/json"},
             body: obj,
@@ -63,7 +63,7 @@ function handleForm2(event) {
     oData.forEach((value, key) => {object[key] = value});
     var json = JSON.stringify(object);
     console.log(json)
-    fetch("https://bits-apogee.org/2021/aarohan/schoolreg/", {
+    fetch("http://bits-apogee.org/2021/aarohan/schoolreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
@@ -75,11 +75,11 @@ function handleForm2(event) {
         {
           location.reload(true);
           obj.email_id = response.email_id;
-          obj.paid = response.paid;
+          //obj.paid = response.paid;
           obj.reg_type = response.reg_type;
           obj = JSON.stringify(obj);
           console.log(obj)
-          fetch("https://bits-apogee.org/2021/aarohan/payment/", {
+          fetch("http://bits-apogee.org/2021/aarohan/payment/", {
             method: "POST",
             headers: { "content-type": "application/json"},
             body: obj,
