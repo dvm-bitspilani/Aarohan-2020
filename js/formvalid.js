@@ -1,123 +1,112 @@
-function formValidation() {
-    var uid = document.registration.userid;
-    var passid = document.registration.passid;
-    var uname = document.registration.username;
-    var uadd = document.registration.address;
-    var ucountry = document.registration.country;
-    var uzip = document.registration.zip;
-    var uemail = document.registration.email;
-    var umsex = document.registration.msex;
-    var ufsex = document.registration.fsex;
-    if (userid_validation(uid, 5, 12)) {
-        if (passid_validation(passid, 7, 12)) {
-            if (allLetter(uname)) {
-                if (alphanumeric(uadd)) {
-                    if (countryselect(ucountry)) {
-                        if (allnumeric(uzip)) {
-                            if (ValidateEmail(uemail)) {
-                                if (validsex(umsex, ufsex)) {
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+let obj = {
+  email_id: "test@test.com",
+  //paid: "false",
+  reg_type: "test",
+}
+
+
+
+var form = document.forms.namedItem("studentreg");
+function handleForm(event) { 
+    event.preventDefault();
+    oData = new FormData(form);
+    var object = {};
+    oData.forEach((value, key) => {object[key] = value});
+    var json = JSON.stringify(object);
+    fetch("http://bits-apogee.org/2021/aarohan/studentreg/", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: json,
+    })
+    .then((res) => {
+      const promise = Promise.resolve(res.json());
+      promise.then((response) => {
+        if(response.message == "Student registered.")
+        {
+          obj.email_id = response.email_id;
+          //obj.paid = response.paid;
+          obj.reg_type = response.reg_type;
+          obj = JSON.stringify(obj);
+          console.log(obj)
+          fetch("http://bits-apogee.org/2021/aarohan/payment/", {
+            method: "POST",
+            headers: { "content-type": "application/json"},
+            body: obj,
+            })
+            .then((res) =>res.text())          
+            
+            .then(text => {
+              console.log(String(text))
+              var opened = window.open("",'_blank')
+              opened.document.write(String(text))
+            })
+            .catch((err) => {
+            console.log(err)
+            })
         }
-    }
-    return false;
-
+        alert(response.message)
+      });
+    })
+    .catch((err) => {
+    console.log(err.message)
+    })
 }
+form.addEventListener('submit', handleForm);
 
-function userid_validation(uid, mx, my) {
-    var uid_len = uid.value.length;
-    if (uid_len == 0 || uid_len >= my || uid_len < mx) {
-        alert("User Id should not be empty / length be between " + mx + " to " + my);
-        uid.focus();
-        return false;
-    }
-    return true;
+
+
+var form2 = document.forms.namedItem("schoolreg");
+function handleForm2(event) { 
+    event.preventDefault();
+    oData = new FormData(form2);
+    var object = {};
+    oData.forEach((value, key) => {object[key] = value});
+    var json = JSON.stringify(object);
+    console.log(json)
+    fetch("http://bits-apogee.org/2021/aarohan/schoolreg/", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: json,
+    })
+    .then((res) => {
+      const promise = Promise.resolve(res.json());
+      promise.then((response) => {
+        if(response.message == "School registered.")
+        {
+          location.reload(true);
+          obj.email_id = response.email_id;
+          //obj.paid = response.paid;
+          obj.reg_type = response.reg_type;
+          obj = JSON.stringify(obj);
+          console.log(obj)
+          fetch("http://bits-apogee.org/2021/aarohan/payment/", {
+            method: "POST",
+            headers: { "content-type": "application/json"},
+            body: obj,
+            })
+            .then((res) =>res.text())          
+            
+            .then(text => {
+              console.log(String(text))
+              var opened = window.open("",'_blank')
+              opened.document.write(String(text))
+            })
+            .catch((err) => {
+            console.log(err)
+            })
+
+        }
+        alert(response.message)
+      });
+    })
+    .catch((err) => {
+    console.log(err.message)
+    })
 }
-
-function passid_validation(passid, mx, my) {
-    var passid_len = passid.value.length;
-    if (passid_len == 0 || passid_len >= my || passid_len < mx) {
-        alert("Password should not be empty / length be between " + mx + " to " + my);
-        passid.focus();
-        return false;
-    }
-    return true;
+const cancel = () => {
+  location.reload(true);
+  console.log('ddffjdstae')
 }
-
-function allLetter(uname) {
-    var letters = /^[A-Za-z]+$/;
-    if (uname.value.match(letters)) {
-        return true;
-    } else {
-        alert('Username must have alphabet characters only');
-        uname.focus();
-        return false;
-    }
-}
-
-function alphanumeric(uadd) {
-    var letters = /^[0-9a-zA-Z]+$/;
-    if (uadd.value.match(letters)) {
-        return true;
-    } else {
-        alert('User address must have alphanumeric characters only');
-        uadd.focus();
-        return false;
-    }
-}
-
-function countryselect(ucountry) {
-    if (ucountry.value == "Default") {
-        alert('Select your country from the list');
-        ucountry.focus();
-        return false;
-    } else {
-        return true;
-    }
-}
-
-function allnumeric(uzip) {
-    var numbers = /^[0-9]+$/;
-    if (uzip.value.match(numbers)) {
-        return true;
-    } else {
-        alert('ZIP code must have numeric characters only');
-        uzip.focus();
-        return false;
-    }
-}
-
-function ValidateEmail(uemail) {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (uemail.value.match(mailformat)) {
-        return true;
-    } else {
-        alert("You have entered an invalid email address!");
-        uemail.focus();
-        return false;
-    }
-}
-
-function validsex(umsex, ufsex) {
-    x = 0;
-
-    if (umsex.checked) {
-        x++;
-    }
-    if (ufsex.checked) {
-        x++;
-    }
-    if (x == 0) {
-        alert('Select Male/Female');
-        umsex.focus();
-        return false;
-    } else {
-        alert('Form Succesfully Submitted');
-        window.location.reload()
-        return true;
-    }
-}
+form2.addEventListener('submit', handleForm2);
+form2.addEventListener('cancel', cancel);
+form.addEventListener('cancel', cancel);
