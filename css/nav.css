@@ -54,3 +54,22 @@ a{
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
+@media all and (max-width: 600px){
+    #navBar {
+
+        width: 100%;
+
+    }
+
+    .navHeader {
+
+        padding: 12px 17px;
+
+    }
+
+    .hamburger {
+
+        overflow: visible;
+    }
+}
