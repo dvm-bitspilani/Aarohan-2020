@@ -187,7 +187,9 @@ body {
 
         width: 100vw;
 
-        padding: 14% 5% 0;
+        padding: 14% 11% 0;
+
+        font-size: 0.8em;
 
         box-sizing: border-box;
 
@@ -218,6 +220,16 @@ body {
         padding-right: 5%;
 
         font-size: 0.8em;
+
+        flex-direction: column;
+
+    }
+
+    .button {
+
+        font-size: 0.8em;
+
+        padding: 10px 22px;
     }
 
     body {

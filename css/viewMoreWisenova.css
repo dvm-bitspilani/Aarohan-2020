@@ -21,16 +21,23 @@ h2 {
 }
 
 .landingContainer h2 {
-margin-top: 1.5em;
-margin-left: 0;
-font-size: 1.5em;
+
+margin-top: 1.5em;
+
+margin-left: 0;
+
+font-size: 1.5em;
 }
 
 .landingContainer h3 {
-font-family: poppins-bold;
-text-align: center;
-margin: 5%;
-font-size: 1.5em;
+
+font-family: poppins-bold;
+
+text-align: center;
+
+margin: 5%;
+
+font-size: 1.5em;
 }
 
 .hmvContainer {
@@ -180,20 +187,18 @@ body {
     overflow-x: hidden;
     margin: 0;
     font-family: poppins;
+    box-sizing: border-box;
 }
 
 @media all and (max-width: 600px) {
     .landingContainer {
-
-        flex-direction: column;
-
-        width: 100vw;
-
-        padding: 14% 5% 0;
-
-        box-sizing: border-box;
-
-    }
+flex-direction: column;
+width: 100vw;
+padding: 14% 11% 0;
+box-sizing: border-box;
+font-size: 0.8em;
+overflow: hidden;
+}
 
     .textContainer p {
 
@@ -220,6 +225,12 @@ body {
         padding-right: 5%;
 
         font-size: 0.8em;
+    }
+    .button {
+
+        font-size: 0.8em;
+
+        padding: 10px 22px;
     }
 
     body {
