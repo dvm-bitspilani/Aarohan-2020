@@ -154,18 +154,27 @@
 }
 
 .roundText {
-margin-bottom: auto;
+
+margin-bottom: auto;
 }
 
 .button {
-    background: #F2CF19;
-    width: 46%;
-    display: flex;
-    justify-content: center;
-    padding: 3%;
-    font-weight: bolder;
-    border-radius: 8px;
-    position: relative;
+    
+background: #F2CF19;
+    
+width: 46%;
+    
+display: flex;
+    
+justify-content: center;
+    
+padding: 3%;
+    
+font-weight: bolder;
+    
+border-radius: 8px;
+    
+position: relative;
 }
 
 body {
@@ -178,15 +187,17 @@ body {
 @media all and (max-width: 600px) {
     .landingContainer {
 
-        flex-direction: column;
+flex-direction: column;
 
-        width: 100vw;
+width: 100vw;
 
-        padding: 14% 5% 0;
+padding: 14% 5% 0;
 
-        box-sizing: border-box;
+box-sizing: border-box;
 
-    }
+height: auto;
+
+}
 
     .textContainer p {
 
@@ -213,6 +224,16 @@ body {
         padding-right: 5%;
 
         font-size: 0.8em;
+    }
+
+    .round {
+    width: 100%;
+    height: auto;
+    }
+
+    .button {
+        width: fit-content;
+        margin: 5% auto;
     }
 
     body {
