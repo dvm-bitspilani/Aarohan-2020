@@ -18,10 +18,29 @@
             </div>
         </div>
         <div id="navBar">
-            <a href="./index.html"><div class="navElements">Home</div></a>
-            <a href="#"><div class="navElements">Results</div></a>
-            <a href="#"><div class="navElements">Answer Key</div></a>
-        </div>
+          <a href="./index.html#landingContainer">
+              <div class="navElements">Home</div>
+          </a>
+          <a href="./index.html#aboutContainer">
+              <div class="navElements">About Us</div>
+          </a>
+          <!-- <a href="#">
+              <div class="navElements">Results</div>
+          </a> -->
+          <a href="#">
+              <div class="navElements">Answer Key</div>
+          </a>
+          <a href="./index.html#faqContainer">
+              <div class="navElements">FAQs</div>
+          </a>
+          <a href="./gallery.html">
+              <div class="navElements">Gallery</div>
+          </a>
+          <a href="./contactUs.html">
+              <div class="navElements">Contact Us</div>
+          </a>
+      </div>
+      
         
         <div class="galleryheading">Our gallery</div>
         <div class="carousel">
@@ -51,15 +70,14 @@
             </div>
           </div>
         
-          <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-          <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="js/1-2min.js"></script>
+          <script type="text/javascript" src="js/migrate.js"></script>
           <script type="text/javascript" src="js/slick.min.js"></script>
         
           <script type="text/javascript">
           function resizefunc(){
             if(window.innerWidth<1000)
             {
-              console.log('xjcssssbdj');
               $('.carousel').slick('unslick');
             }
             else{

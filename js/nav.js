@@ -32,6 +32,7 @@ const closeNav = () => {
         hamLine[0].style = initialStyle
         hamLine[2].style = initialStyle
         isOpened = false
+        document.body.style.overflowY = 'visible'
     }
 }
 
