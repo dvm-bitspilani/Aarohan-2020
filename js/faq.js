@@ -206,6 +206,46 @@ faqcontainer[5].addEventListener('click', function () {
         horizontalLine[5].style=initialhorizontallStyle;
     }
 })
+faqcontainer[6].addEventListener('click', function () {
+    if (!alreadyOpen[6]) {
+        faqanswer[6].style.display = "block";
+        faqcontainer[6].style.height = containerheightopen + "vh";
+        faqcontainer[6].style.border = "2px solid #F2CF19";
+        faqcontainer[6].style.background = "#FFFDF2";
+        alreadyOpen[6] = true;
+        verticalLine[6].style.transform = "rotate(90deg)";
+        verticalLine[6].style.background = "#F2CF19";
+        horizontalLine[6].style.background = "#F2CF19";
+    } else {
+        faqanswer[6].style.display = "none";
+        faqcontainer[6].style.height = containerheight + "vh";
+        faqcontainer[6].style.border = "1px solid #707070";
+        faqcontainer[6].style.background = "white";
+        alreadyOpen[6] = false;
+        verticalLine[6].style=initialVerticalStyle;
+        horizontalLine[6].style=initialhorizontallStyle;
+    }
+})
+faqcontainer[7].addEventListener('click', function () {
+    if (!alreadyOpen[7]) {
+        faqanswer[7].style.display = "block";
+        faqcontainer[7].style.height = containerheightopen + "vh";
+        faqcontainer[7].style.border = "2px solid #F2CF19";
+        faqcontainer[7].style.background = "#FFFDF2";
+        alreadyOpen[7] = true;
+        verticalLine[7].style.transform = "rotate(90deg)";
+        verticalLine[7].style.background = "#F2CF19";
+        horizontalLine[7].style.background = "#F2CF19";
+    } else {
+        faqanswer[7].style.display = "none";
+        faqcontainer[7].style.height = containerheight + "vh";
+        faqcontainer[7].style.border = "1px solid #707070";
+        faqcontainer[7].style.background = "white";
+        alreadyOpen[7] = false;
+        verticalLine[7].style=initialVerticalStyle;
+        horizontalLine[7].style=initialhorizontallStyle;
+    }
+})
 
 
 
