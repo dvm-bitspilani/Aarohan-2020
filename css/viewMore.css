@@ -128,11 +128,33 @@
 .patterContainer {
     display: flex;
     flex-wrap: wrap;
-    padding: 11% 11%;
+    padding: 4% 13%;
     font-family: poppins;
     height: 100vh;
     box-sizing: border-box;
     align-items: flex-start;
+}
+.one{
+    left: 0;
+    top: 130vh;
+    display: block;
+    position: absolute;
+    font: normal normal bold 200px/266px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.05; 
+    font-size: 12em; 
+}
+.two{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 130vh;
+    font: normal normal bold 200px/266px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.05; 
+    font-size: 12em; 
 }
 
 .patterContainer h3 {
@@ -142,7 +164,7 @@
 
 .round {
     width: 50%;
-    height: auto;
+    height: 85vh;
     padding: 0 5% 0 0;
     box-sizing: border-box;
     display: flex;
@@ -154,13 +176,13 @@
 }
 
 .roundText {
-    
     height: auto;
     margin-bottom: auto;
 }
 
 .button {
 
+    margin: auto;
     background: #F2CF19;
 
     width: 46%;
@@ -179,6 +201,16 @@
     position: relative;
 }
 
+.background {
+    overflow: visible;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    /* z-index: -1; */
+    /* left: 0; */
+    /* padding-left: 16%; */
+}
 body {
     background: #F2F2F2;
     width: 100vw;
@@ -187,6 +219,13 @@ body {
 }
 
 @media all and (max-width: 600px) {
+    .one{
+        display: none;
+
+    }
+    .two{
+        display: none;
+    }
     .landingContainer {
 
         flex-direction: column;

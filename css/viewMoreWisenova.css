@@ -12,7 +12,16 @@ h2 {
     margin-left: 11%;
     font-size: 1.2em;
 }
-
+.background {
+    overflow: visible;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    /* z-index: -1; */
+    /* left: 0; */
+    /* padding-left: 16%; */
+}
 .landingContainer h1 {
 
     font-family: poppins-bold;
@@ -192,13 +201,20 @@ body {
 
 @media all and (max-width: 600px) {
     .landingContainer {
-flex-direction: column;
-width: 100vw;
-padding: 14% 11% 0;
-box-sizing: border-box;
-font-size: 0.8em;
-overflow: hidden;
-}
+
+flex-direction: column;
+
+width: 100vw;
+
+padding: 14% 11% 0;
+
+box-sizing: border-box;
+
+font-size: 0.8em;
+
+overflow: hidden;
+
+}
 
     .textContainer p {
 

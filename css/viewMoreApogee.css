@@ -18,7 +18,16 @@ h2 {
     margin-left: 11%;
     font-size: 1.2em;
 }
-
+.background {
+    overflow: visible;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    /* z-index: -1; */
+    /* left: 0; */
+    /* padding-left: 16%; */
+}
 .landingContainer h1 {
 
     font-family: poppins-bold;

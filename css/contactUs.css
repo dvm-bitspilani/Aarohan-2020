@@ -1,13 +1,12 @@
 .footer {
-height: 100vh;
-color: white;
-background: #111111;
-display: flex;
-justify-content: space-between;
-font-family: poppins;
-padding: 5% 14%;
-width: 100%;
-box-sizing: border-box;
+color: white;
+background: #111111;
+display: flex;
+justify-content: space-between;
+font-family: poppins;
+padding: 3% 14%;
+width: 100%;
+box-sizing: border-box;
 }
 
 .contactElement {
@@ -26,49 +25,47 @@
 }
 
 .contactElements {
-padding: 15% 20% 0 0;
-font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3.5% 5% 3.5% 5%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
 }
 
+.contactimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vh;
+    height: 15vh;
+    background-color: whitesmoke;
+    border-radius: 50%;
+
+}
 .registerElement {
-
     padding: 5% 0;
-
     display: flex;
-
     width: 50%;
-
     flex-wrap: wrap;
-
     justify-content: space-between;
-
     font-size: 0.9em;
 }
-
-.registerElement h2 {
-
-    margin-top: 0;
-
+.contactinfo{
     width: 100%;
-
     text-align: center;
 }
 
 .registerContact {
-
     width: 50%;
-
     text-align: center;
 }
 
 body {
-    margin: 0;
-    width: 100vw;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.hamburger {
+margin: 0;
+width: 100vw;
+box-sizing: border-box;    
+overflow-x: hidden;
 }
 
 .hamburgerLines {

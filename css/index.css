@@ -108,8 +108,12 @@ a{
 }
 
 .landingFooterElements {
+    padding: 10px 20px;
+    background: #F2CF19;
+    border-radius: 4px;
+    font-weight: bold;
     cursor: pointer;
-    color: white;
+    z-index: 2;
 }
 
 .landingFooterElements::after {
