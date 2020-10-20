@@ -13,7 +13,7 @@ function handleForm(event) {
     var object = {};
     oData.forEach((value, key) => {object[key] = value});
     var json = JSON.stringify(object);
-    fetch("http://bits-apogee.org/2021/aarohan/studentreg/", {
+    fetch("https://bits-apogee.org/2021/aarohan/studentreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
@@ -28,7 +28,7 @@ function handleForm(event) {
           obj.reg_type = response.reg_type;
           obj = JSON.stringify(obj);
           console.log(obj)
-          fetch("http://bits-apogee.org/2021/aarohan/payment/", {
+          fetch("https://bits-apogee.org/2021/aarohan/payment/", {
             method: "POST",
             headers: { "content-type": "application/json"},
             body: obj,
