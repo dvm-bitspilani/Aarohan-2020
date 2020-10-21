@@ -62,7 +62,7 @@ function handleForm2(event) {
     var object = {};
     oData.forEach((value, key) => {object[key] = value});
     var json = JSON.stringify(object);
-    console.log(json)
+    //console.log(json)
     fetch("https://bits-apogee.org/2021/aarohan/schoolreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -71,9 +71,8 @@ function handleForm2(event) {
     .then((res) => {
       const promise = Promise.resolve(res.json());
       promise.then((response) => {
-        if(response.message == "School registered.")
+        if(response.message == "School created.")
         {
-          location.reload(true);
           obj.email_id = response.email_id;
           //obj.paid = response.paid;
           obj.reg_type = response.reg_type;
