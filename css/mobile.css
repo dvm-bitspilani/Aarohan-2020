@@ -212,4 +212,10 @@ padding: 0 2.8vw;
         
 padding: 6% 10%;
     }
+    .wisenovaSide{
+        display: none;
+    }
+    .wisenovaText{
+        width: 80%;
+    }
 }

@@ -183,3 +183,17 @@ a{
 .faqContainer {
     z-index: 1;
 }
+
+.wisenovaText{
+    width: 50%;
+    z-index: 1;
+}
+
+.wisenovaSide {
+    background: url("../assets/img/wisenova.png") no-repeat;
+    width: 40%;
+    /* height: 80%; */
+    background-size: contain;
+    margin-left: auto;
+    z-index: 1;
+}

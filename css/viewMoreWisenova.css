@@ -7,7 +7,6 @@
     overflow: hidden;
     box-sizing: border-box;
 }
-
 h2 {
     margin-left: 11%;
     font-size: 1.2em;
@@ -21,12 +20,6 @@ h2 {
     /* z-index: -1; */
     /* left: 0; */
     /* padding-left: 16%; */
-}
-.landingContainer h1 {
-
-    font-family: poppins-bold;
-
-    font-size: 2.5em;
 }
 
 .landingContainer h2 {
@@ -166,27 +159,16 @@ font-size: 1.5em;
 }
 
 .button {
-
     background: #F2CF19;
-
     width: fit-content;
-
     display: flex;
-
     justify-content: center;
-
     padding: 1.5% 3.5%;
-
     font-size: 1.2em;
-
     font-weight: bolder;
-
     border-radius: 8px;
-
     margin: auto;
-
     margin-bottom: 5%;
-
     position: relative;
 }
 
@@ -248,7 +230,6 @@ overflow: hidden;
 
         padding: 10px 22px;
     }
-
     body {
         width: auto;
     }
