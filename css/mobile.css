@@ -12,14 +12,10 @@
     }
 
     .aboutContainer {
-
-        height: auto;
-
-        padding: 10% 7%;
-
-        font-size: 0.9em;
-
-    }
+height: auto;
+padding: 10% 15%;
+font-size: 0.9em;
+}
 
     .landingBodyContainer {
 
@@ -62,7 +58,7 @@
     }
 
     .landingFooterElements {
-        color: white;
+        color: black;
     }
 
     .landingSubHeading {
@@ -216,6 +212,9 @@ padding: 6% 10%;
         display: none;
     }
     .wisenovaText{
-        width: 80%;
+        width: auto;
+        padding: 0 1%;
+        display: flex;
+        flex-direction: column;
     }
 }
