@@ -39,6 +39,7 @@ function handleForm(event) {
               console.log(String(text))
               var opened = window.open("",'_blank')
               opened.document.write(String(text))
+              window.location.reload();
             })
             .catch((err) => {
             console.log(err)
@@ -89,6 +90,7 @@ function handleForm2(event) {
               console.log(String(text))
               var opened = window.open("",'_blank')
               opened.document.write(String(text))
+              window.location.reload();
             })
             .catch((err) => {
             console.log(err)
