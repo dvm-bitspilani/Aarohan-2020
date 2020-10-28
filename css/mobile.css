@@ -12,16 +12,21 @@
     }
 
     .aboutContainer {
-height: auto;
-padding: 10% 10%;
-font-size: 0.9em;
-}
+
+        height: auto;
+
+        padding: 10%;
+
+        font-size: 0.9em;
+    }
 
     .landingBodyContainer {
 
         font-size: 0.75em;
 
-        margin: 0 0 0;
+        margin: -30% 0 0;
+
+        color: white;
 
     }
 
@@ -201,23 +206,32 @@
     }
 
     .faqelementcontainer {
-        
-padding: 0 2.8vw;
+
+        padding: 0 2.8vw;
     }
+
     .faqContainer {
-        
-padding: 6% 10%;
+
+        padding: 6% 10%;
     }
-    .wisenovaSide{
+
+    .wisenovaSide {
         display: none;
     }
-    .wisenovaText{
+
+    .wisenovaText {
         width: auto;
         padding: 0 1%;
         display: flex;
         flex-direction: column;
     }
-    .apogee{
-        
+
+    .apogee {
+
+    }
+
+    .decoLine {
+
+        background: white;
     }
 }
