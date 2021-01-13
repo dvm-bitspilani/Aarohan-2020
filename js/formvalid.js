@@ -37,7 +37,11 @@ function handleForm(event) {
             
             .then(text => {
               console.log(String(text))
-              var opened = window.open("",'_blank')
+              var opened = setTimeout(() => window.open("",'_blank'), 1000);
+              if(!opened || opened.closed || typeof opened.closed=='undefined' )
+              {
+                alert("POPUPS BLOCKED PLS ALLOW POPUPS AND TRY AGAIN!!");
+              }
               opened.document.write(String(text))
               window.location.reload();
             })
