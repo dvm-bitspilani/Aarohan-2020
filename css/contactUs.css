@@ -58,6 +58,8 @@ box-sizing: border-box;
 .contactinfo{
     width: 100%;
     text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0px 0;
 }
 
 .registerContact {
