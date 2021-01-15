@@ -38,18 +38,11 @@ function handleForm(event) {
             .then(text => {
               console.log(String(text));
               var opened;
-              setTimeout(() =>
-              {opened = window.open("",'_blank')
-              opened.document.write(String(text))
-            }
-               , 1000);
-              setTimeout(() => {
-                if(!opened || opened.closed || typeof opened.closed=='undefined' )
-              {
-                alert("POPUPS BLOCKED PLS ALLOW POPUPS AND TRY AGAIN!!");
-              }
-              window.location.reload();
-              }, 2000);
+              
+                
+              window.document.write(String(text))
+            
+              
               
               
               
