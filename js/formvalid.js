@@ -58,7 +58,8 @@ function handleForm(event) {
             console.log(err)
             })
         }
-        alert(response.message)
+        else
+          alert(response.message)
       });
     })
     .catch((err) => {
