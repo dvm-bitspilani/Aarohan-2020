@@ -36,14 +36,23 @@ function handleForm(event) {
             .then((res) =>res.text())          
             
             .then(text => {
-              console.log(String(text))
-              var opened = setTimeout(() => window.open("",'_blank'), 1000);
-              if(!opened || opened.closed || typeof opened.closed=='undefined' )
+              console.log(String(text));
+              var opened;
+              setTimeout(() =>
+              {opened = window.open("",'_blank')
+              opened.document.write(String(text))
+            }
+               , 1000);
+              setTimeout(() => {
+                if(!opened || opened.closed || typeof opened.closed=='undefined' )
               {
                 alert("POPUPS BLOCKED PLS ALLOW POPUPS AND TRY AGAIN!!");
               }
-              opened.document.write(String(text))
               window.location.reload();
+              }, 2000);
+              
+              
+              
             })
             .catch((err) => {
             console.log(err)
