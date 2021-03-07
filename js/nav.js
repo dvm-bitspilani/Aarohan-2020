@@ -3,7 +3,9 @@ let isOpened = false
 const openCloseNav = () => {
     let navBar = document.getElementById('navBar')
     let hamLine = document.getElementsByClassName('hamburgerLines')
-    let initialStyle = hamLine[1].style;
+    hamLine[1].style.opacity = '1'
+
+    const initialStyle = hamLine[1].style;
     if (isOpened) {
         navBar.style.transform = 'translateX(-100%)'
         hamLine[0].style = initialStyle
@@ -18,6 +20,7 @@ const openCloseNav = () => {
         hamLine[0].style.marginTop = '6px'
         hamLine[2].style.backgroundColor = 'white'
         hamLine[2].style.marginTop = '-14px'
+        hamLine[1].style.opacity = '0'
         isOpened = true;
         document.body.style.overflowY = 'hidden'
     }

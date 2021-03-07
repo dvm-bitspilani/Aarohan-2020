@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale = 1">
+    <title>Aarohan 2021</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.css" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <link href="css/testimonial.css" rel="stylesheet" type="text/css">
+    <link href="css/faq.css" rel="stylesheet" type="text/css">
+    <link href="css/registration.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/result.css" rel="stylesheet">
+</head>
+<body>
+<div class="navHeader">
+    <div class="hamburger" onclick="openCloseNav()">
+        <div class="hamburgerLines"></div>
+        <div class="hamburgerLines"></div>
+        <div class="hamburgerLines"></div>
+    </div>
+</div>
+<div id="navBar">
+    <a href="#landingContainer">
+        <div class="navElements">Home</div>
+    </a>
+    <a href="#aboutContainer">
+        <div class="navElements">About Us</div>
+    </a>
+    <!-- <a href="#">
+        <div class="navElements">Results</div>
+    </a> -->
+    <!-- <a href="#">
+        <div class="navElements">Answer Key</div>
+    </a> -->
+    <a href="#faqContainer">
+        <div class="navElements">FAQs</div>
+    </a>
+    <a href="./gallery.html">
+        <div class="navElements">Gallery</div>
+    </a>
+    <a href="./contactUs.html">
+        <div class="navElements">Contact Us</div>
+    </a>
+</div>
+<div class="wrapper" onclick="closeNav()" id="wrapper">
+    <div class="landingContainer" id="landingContainer">
+        <div class="landingBack"></div>
+        <div class="landingBodyContainer" id="landingBodyContainer">
+            <div class="landingHeading">
+                Congratulations to all </br>the toppers!
+            </div>
+            <div class="toppers">
+                <div class="topper ">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 2
+                    </div>
+                </div>
+                <div class="topper topper1">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 1
+                    </div>
+                </div>
+                <div class="topper ">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboutContainer" id="aboutContainer">
+        <div class="background">
+            <img src="assets/img/Group%2097.png" style="
+                        position: relative;
+                        top: 48%;
+                        left: 2%;
+                    ">
+            <img src="assets/img/Group%2098.png" style="
+                        position: absolute;
+                        top: 5%;
+                        left: -14%;
+                    ">
+            <img src="assets/img/Group%2099.png" style="
+                        position: absolute;
+                        top: 27%;
+                        left: 60%;
+                    ">
+            <img src="assets/img/Group%20101.png" style="
+                        position: absolute;
+                        left: 71%;
+                        top: 68%;
+                    ">
+            <img src="assets/img/Group%20102.png" style="
+                        position: absolute;
+                        top: 44%;
+                        left: 86%;
+                    ">
+            <img src="assets/img/Group%20103.png" style="
+                        position: absolute;
+                        left: 83%;
+                        top: 12%;
+                    ">
+        </div>        <div class="aboutHeading">
+            Check Your Result
+        </div>
+        <form id="result">
+            <div class="input">
+                <label for="email">
+                    Email ID
+                </label>
+                <input id="email" name="email" />
+            </div>
+            <div class="input">
+                <label for="mobile">
+                    Phone Number
+                </label>
+                <input id="mobile" name="mobile" />
+            </div>
+            <div class="input">
+                <p style="margin-block-start: 0.5em">
+
+                </p>
+                <button type="submit" class="check">Check Result</button>
+            </div>
+        </form>
+        <table class="resultTable">
+            <tr>
+                <th>Name</th>
+                <th>Rank</th>
+            </tr>
+            <tr>
+                <td id="resultName">Name Surname</td>
+                <td id="resultRank">#2002</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="js/cities.js"></script>
+<script language="javascript">print_state("sts");</script>
+<script language="javascript">print_state2("sts2");</script>
+<script src="swiper/swiper-bundle.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/index.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/formvalid.js"></script>
+</html>
