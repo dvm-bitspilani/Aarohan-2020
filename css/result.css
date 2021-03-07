@@ -1,7 +1,9 @@
 .landingBodyContainer {
     margin-top: 8%;
 }
-
+.landingContainer{
+    background-image: url(../assets/img/result.png);
+}
 .navHeader {
     top: 0;
     display: flex;
