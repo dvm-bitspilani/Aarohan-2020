@@ -2,6 +2,7 @@ let form = document.forms.namedItem("result");
 function handleForm(event) {
     event.preventDefault();
     oData = new FormData(form);
+    document.querySelector('table').style.display = 'none'
     document.querySelector('.loader').style.display = 'block'
 
     var object = {};
@@ -25,11 +26,15 @@ function handleForm(event) {
                 }
                 catch (e){
                     window.alert(response.message)
+                    document.querySelector('.loader').style.display = 'none'
+                    document.querySelector('table').style.display = 'none'
                 }
             });
         })
         .catch((err) => {
             alert(err.message)
+            document.querySelector('.loader').style.display = 'none'
+            document.querySelector('table').style.display = 'none'
         })
 }
 form.addEventListener('submit', handleForm);
