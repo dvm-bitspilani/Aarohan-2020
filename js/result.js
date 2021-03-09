@@ -13,17 +13,20 @@ function handleForm(event) {
         .then((res) => {
             const promise = Promise.resolve(res.json());
             promise.then((response) => {
-                console.log(response.data[0])
-                let result = response.data[0]
-                if (result){
+
+                try {
+                    let result = response.data[0]
                     document.querySelector('table').style.display = 'table'
                     document.getElementById('resultName').innerHTML = result.name;
                     document.getElementById('resultRank').innerHTML = result.all_india_rank;
                 }
+                catch (e){
+                    window.alert(response.message)
+                }
             });
         })
         .catch((err) => {
-            console.log(err.message)
+            alert(err.message)
         })
 }
 form.addEventListener('submit', handleForm);
