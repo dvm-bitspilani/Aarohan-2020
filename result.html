@@ -28,7 +28,7 @@
 <div id="navBar">
     <a href="./index.html#landingContainer"><div class="navElements">Home</div></a>
     <a href="./index.html#aboutContainer"><div class="navElements">About Us</div></a>
-    <!-- <a href="#"><div class="navElements">Results</div></a> -->
+     <a href="result.html"><div class="navElements">Results</div></a>
     <!-- <a href="#"><div class="navElements">Answer Key</div></a> -->
     <a href="./index.html#faqContainer"><div class="navElements">FAQs</div></a>
     <a href="./gallery.html"><div class="navElements">Gallery</div></a>
@@ -62,6 +62,41 @@
                     </div>
                     <div class="rank">
                         AIR 1
+                    </div>
+                </div>
+                <div class="topper ">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 3
+                    </div>
+                </div>
+            </div>
+            <div class="toppers mobile">
+                <div class="topper topper1">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 1
+                    </div>
+                </div>
+                <div class="topper ">
+                    <div class="image">
+
+                    </div>
+                    <div class="name">
+                        Name Surname
+                    </div>
+                    <div class="rank">
+                        AIR 2
                     </div>
                 </div>
                 <div class="topper ">
@@ -114,18 +149,18 @@
         <div class="aboutHeading">
             Check Your Result
         </div>
-        <form id="result">
+        <form id="result" name="result" method="post">
             <div class="input">
                 <label for="email">
                     Email ID
                 </label>
-                <input id="email" name="email" />
+                <input type="email" id="email" name="email" />
             </div>
             <div class="input">
                 <label for="mobile">
-                    Phone Number
+                    Student Class
                 </label>
-                <input id="mobile" name="mobile" />
+                <input type="number" id="mobile" name="student_class" />
             </div>
             <div class="input">
                 <p style="margin-block-start: 0.5em">
@@ -147,12 +182,7 @@
     </div>
 </div>
 </body>
-<script src="js/cities.js"></script>
-<script language="javascript">print_state("sts");</script>
-<script language="javascript">print_state2("sts2");</script>
-<script src="swiper/swiper-bundle.min.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/index.js"></script>
-<script src="js/faq.js"></script>
-<script src="js/formvalid.js"></script>
+<script src="js/result.js"></script>
 </html>

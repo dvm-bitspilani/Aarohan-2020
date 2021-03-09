@@ -1,9 +1,12 @@
 .landingBodyContainer {
     margin-top: 8%;
 }
-.landingContainer{
+
+.landingContainer {
+    display: none;
     background-image: url(../assets/img/result.png);
 }
+
 .navHeader {
     top: 0;
     display: flex;
@@ -28,6 +31,7 @@
     color: #212121;
     font-family: 'Poppins-SemiBold';
     padding: 5% 15%;
+    flex-wrap: wrap;
 }
 
 .topper {
@@ -40,9 +44,9 @@
 
 .image {
     display: flex;
-    height: 25vh;
+    height: 22vh;
     background: gray;
-    width: 25vh;
+    width: 22vh;
     border-radius: 50%;
     border: 8px solid black;
 }
@@ -57,9 +61,9 @@
 }
 
 .background {
-    top: 100vh;
+    top: 0;
     left: 0;
-    /* z-index: -1; */
+    z-index: 0;
 }
 
 #result {
@@ -68,6 +72,8 @@
     width: 100%;
     padding-right: 14%;
     padding-top: 2%;
+    z-index: 1;
+    flex-wrap: wrap;
 }
 
 .input {
@@ -111,11 +117,11 @@
 }
 
 .aboutContainer {
-    padding: 14% 15%;
+    padding: 0% 15%;
 }
 
 .aboutHeading {
-
+    margin-top: 16%;
 }
 
 table, th, td {
@@ -129,6 +135,7 @@ table, th, td {
     padding-right: 8%;
     margin-top: 10%;
     border: 1px #9e9e9e solid;
+    display: none;
 }
 
 tr { /* margin: 11px; */
@@ -143,4 +150,75 @@ td {
 
 }
 
-#navBar{background: #212121;}
+.mobile {
+    display: none;
+}
+
+#navBar {
+    background: #212121;
+}
+
+@media only screen and (max-width: 600px) {
+    .navHeader {
+        padding: 20px 40px;
+    }
+    .aboutContainer{
+        padding-top: 15%;
+    }
+
+    .landingContainer {
+        display: none;
+    }
+
+    .toppers {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+        padding: 5% 10%;
+    }
+
+    .topper {
+
+    }
+
+    .topper1 {
+        transform: none;
+        height: 25vh;
+        width: 25vh;
+        margin: 0 29px;
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+    #email {
+        width: 100%; /* margin-right: 15%; */
+    }
+    #result{
+        padding-right: 0;
+        flex-direction: column;
+        padding-right: 0;
+    }
+    #mobile {
+        width: 100%;
+    }
+    .input label{
+        padding: 15px 0 0;
+    }
+    .resultTable{
+        width: 100%;
+        padding-right: 0;
+    }
+    .name {
+
+    }
+
+    .rank {
+
+    }
+}
