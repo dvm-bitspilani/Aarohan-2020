@@ -45,7 +45,10 @@ box-sizing: border-box;
     height: 15vh;
     background-color: whitesmoke;
     border-radius: 50%;
-
+    overflow: hidden;
+}
+.contactimage img{
+    width: 100%;
 }
 .registerElement {
     padding: 5% 0;
@@ -143,7 +146,7 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .queryForm label {
@@ -181,4 +184,24 @@ input[type="number"] {
 ::placeholder {
     font-family: Poppins;
     color: black;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    padding: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
