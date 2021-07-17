@@ -1,5 +1,6 @@
-body{
+html, body{
     overflow-x: hidden;
+    width:100%;
 }
 .galleryheading{
     width: 60vw;
@@ -50,10 +51,9 @@ img{
 @media all and (max-width: 1000px){
     .galleryheading{
         width: 70vw;
-        margin-top: 10vh;
+        margin-top: 10vh 15vw;
         font: normal normal bold 30px/36px Inter;
         font-family: poppins, serif;
-        margin-left: 15vw;
     }
     img{
         margin-top: 2vh;

@@ -134,6 +134,10 @@
 
     }
 
+    .testimonialHeading{
+        text-align: center;
+    }
+
     .footer {
 
         flex-direction: column;
@@ -206,13 +210,21 @@
     }
 
     .faqelementcontainer {
-
         padding: 0 2.8vw;
     }
 
-    .faqContainer {
+    .faqHeading{
+        text-align: center;
+    }
 
+    .faqContainer {
         padding: 6% 10%;
+    }
+
+    .faqbodycontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .wisenovaSide {
@@ -233,5 +245,14 @@
     .decoLine {
 
         background: white;
+    }
+
+
+    .navHeader{
+        padding: 16px 4px;
+    }
+
+    #navBar {
+        width: 100%;
     }
 }
