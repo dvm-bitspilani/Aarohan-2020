@@ -215,3 +215,12 @@ marquee {
     font-family: 'Poppins';
     z-index: 3;
 }
+
+.registerDisclaimer{
+    position: relative;
+    font-family: poppins;
+    display: inline-block;
+    width: 70%;
+    left:50%;
+    transform: translateX(-50%);
+}

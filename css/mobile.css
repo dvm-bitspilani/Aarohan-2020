@@ -197,6 +197,10 @@
         text-align: center;
     }
 
+    .registerDisclaimer{
+        font-size: 0.8em;
+    }
+
     .swiper-container {
         display: flex;
     }
