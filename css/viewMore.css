@@ -240,15 +240,19 @@ body {
 
     }
 
-    .textContainer p {
+    .textContainer p, .textContainer h2 {
 
-        padding-right: 5%;
+        padding: 0 10%;
     }
 
     .imageP {
         position: relative;
         left: 130px;
         top: -130px;
+    }
+
+    .background{
+        width: 92vw;
     }
 
     .imageContainer {
@@ -279,5 +283,9 @@ body {
 
     body {
         width: auto;
+    }
+    .navHeader{
+        top: 0;
+        padding: 8px 4px;
     }
 }
