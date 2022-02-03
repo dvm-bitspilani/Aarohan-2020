@@ -259,7 +259,7 @@
     #navBar {
         width: 100%;
     }
-    #view-more{
-        margin-top: 5%;
+    #view-more, #results{
+        margin: 10px auto;
     }
 }
