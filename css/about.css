@@ -20,6 +20,13 @@
     margin-block-end: 3%;
 }
 
+.aboutSubHeading{
+    width: 100%;
+    font-family: poppins-semibold;
+    font-size: 1.3em;
+    margin-block-end: 3%;
+}
+
 .aboutQuote {
     padding: 0 14%;
     text-align: center;
