@@ -139,13 +139,19 @@ a {
 }
 
 .button {
-    margin: auto;
+    margin: 0;
     padding: 10px 20px;
     background: #F2CF19;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     z-index: 2;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: -3rem;
 }
 
 .background {
@@ -197,6 +203,7 @@ a {
 .wisenovaSide {
     background: url("../assets/img/wisenova.png") no-repeat;
     width: 40%;
+    transform: translateY(80px);
     /* height: 80%; */
     background-size: contain;
     margin-left: auto;
@@ -204,7 +211,7 @@ a {
 }
 
 .apogee {
-    padding-right: 19%;
+    margin: -3rem 0;
 }
 
 marquee {
@@ -221,6 +228,8 @@ marquee {
     font-family: poppins;
     display: inline-block;
     width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
     left:50%;
     transform: translateX(-50%);
 }

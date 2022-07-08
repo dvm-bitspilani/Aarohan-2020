@@ -3,15 +3,12 @@
     width: 100%;
     display: block;
     position: relative;
+    margin-top: -5rem;
+    z-index: 2;
     padding: 0% 16% 5%;
     box-sizing: border-box;
     font-family: poppins;
     background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 200%);
-}
-
-.registerAsStudentContainer {
-    width: 40%;
-    float: left;
 }
 
 .registerAsSchoolContainer {
@@ -76,6 +73,7 @@
 }
 
 .submitButton {
+    margin-left: 2rem !important;
     background: #F2CF19;
 }
 
