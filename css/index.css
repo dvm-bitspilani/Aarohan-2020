@@ -1,235 +1,235 @@
 body {
-    width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-    background-color: #fafafa;
-    scroll-behavior: smooth;
+	width: 100vw;
+	overflow-x: hidden;
+	margin: 0;
+	background-color: #fafafa;
+	scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
-    scroll-behavior: smooth;
-    color: black;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	color: black;
 }
 
 * {
-    box-sizing: border-box;
-    /* overflow-x: hidden; */
-    user-select: none;
-    -webkit-user-drag: none;
+	box-sizing: border-box;
+	/* overflow-x: hidden; */
+	user-select: none;
+	-webkit-user-drag: none;
 }
 
 .aboutBody {
-    padding-bottom: 8%;
-    text-align: justify;
-    z-index: 1;
+	padding-bottom: 8%;
+	text-align: justify;
+	z-index: 1;
 }
 
 .landingContainer {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    /*background: #F2CF19;*/
-    background-image: url(../assets/img/landingBack.png);
-    background-attachment: fixed;
-    background-position: -1 -21px;
-    background-size: cover;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    /* z-index: -1; */
+	display: flex;
+	width: 100%;
+	/* height: 100vh; */
+	/*background: #F2CF19;*/
+	background-image: url(../assets/img/landingBack.png);
+	background-attachment: fixed;
+	background-position: -1 -21px;
+	background-size: cover;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	/* z-index: -1; */
 }
 
 .landingBack {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    filter: opacity(0.4);
-    /* background: linear-gradient(transparent 48%, black); */
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	filter: opacity(0.4);
+	/* background: linear-gradient(transparent 48%, black); */
 }
 
 .landingBodyContainer {
-    text-align: center;
-    font-family: poppins, serif;
-    margin: 13% 0 13%;
-    z-index: 2;
+	text-align: center;
+	font-family: poppins, serif;
+	margin: 13% 0 13%;
+	z-index: 2;
 }
 
 .landingHeading {
-    font-family: Poppins-Bold, serif;
-    font-size: 4em;
-    text-transform: uppercase;
+	font-family: Poppins-Bold, serif;
+	font-size: 4em;
+	text-transform: uppercase;
 }
 
 .landingSubHeading {
-    font-size: 1.7em;
-    font-family: Poppins-Bold, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	font-size: 1.7em;
+	font-family: Poppins-Bold, serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .decoLine {
-    width: 60px;
-    height: 5px;
-    border-radius: 50px;
-    background: black;
-    margin: 0 11px;
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background: black;
+	margin: 0 11px;
 }
 
 .resultContainer {
-    background: #F2CF19 0% 0%;
-    margin: 6% 31%;
-    padding: 10px;
-    box-shadow: 0px 8px 12px #1A1A1A29;
-    border-radius: 4px;
-    cursor: pointer;
-    /* font-weight: bold; */
-    font-family: poppins-semibold;
-    transition: 0.1s;
+	background: #F2CF19 0% 0%;
+	margin: 6% 31%;
+	padding: 10px;
+	box-shadow: 0px 8px 12px #1A1A1A29;
+	border-radius: 4px;
+	cursor: pointer;
+	/* font-weight: bold; */
+	font-family: poppins-semibold;
+	transition: 0.1s;
 }
 
 .resultContainer:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .resultContainer:active {
-    transform: scale(1);
-    transition: 0s;
+	transform: scale(1);
+	transition: 0s;
 }
 
 .landingFooter {
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    font-family: poppins, serif;
-    padding: 0 10%;
-    z-index: 2;
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+	font-family: poppins, serif;
+	padding: 0 10%;
+	z-index: 2;
 }
 
 .landingFooterElements {
-    padding: 10px 20px;
-    background: #F2CF19;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2;
+	padding: 10px 20px;
+	background: #F2CF19;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 2;
 }
 
 .landingFooterElements::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background: black;
-    width: 0%;
-    transition: 0.2s;
-    margin-left: 50%;
+	content: '';
+	display: block;
+	height: 2px;
+	background: black;
+	width: 0%;
+	transition: 0.2s;
+	margin-left: 50%;
 }
 
 .landingFooterElements:hover:after {
-    content: '';
-    display: block;
-    height: 2px;
-    background: black;
-    width: 100%;
-    margin-left: 0;
+	content: '';
+	display: block;
+	height: 2px;
+	background: black;
+	width: 100%;
+	margin-left: 0;
 }
 
 .button {
-    margin: 0;
-    padding: 10px 20px;
-    background: #F2CF19;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2;
+	margin: 0;
+	padding: 10px 20px;
+	background: #F2CF19;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 2;
 }
 
-.buttons{
-    display: flex;
-    gap: 1rem;
-    margin-top: -3rem;
+.buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: -3rem;
 }
 
 .background {
-    overflow: visible;
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    box-sizing: border-box;
-    /* z-index: -1; */
-    /* left: 0; */
-    /* padding-left: 16%; */
+	overflow: visible;
+	position: absolute;
+	height: 100%;
+	/* width: 100vw; */
+	box-sizing: border-box;
+	/* z-index: -1; */
+	/* left: 0; */
+	/* padding-left: 16%; */
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f100;
-    padding: 1px;
+	background: #f1f1f100;
+	padding: 1px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 50px;
+	background: #888;
+	border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+	background: #555;
 }
 
 .testimonialContainer {
-    z-index: 2;
+	z-index: 2;
 }
 
 .faqContainer {
-    z-index: 1;
+	z-index: 1;
 }
 
 .wisenovaText {
 
-    width: 50%;
+	width: 50%;
 
-    z-index: 1;
+	z-index: 1;
 }
 
 .wisenovaSide {
-    background: url("../assets/img/wisenova.png") no-repeat;
-    width: 40%;
-    transform: translateY(80px);
-    /* height: 80%; */
-    background-size: contain;
-    margin-left: auto;
-    z-index: 1;
+	background: url("../assets/img/wisenova.png") no-repeat;
+	width: 40%;
+	transform: translateY(80px);
+	/* height: 80%; */
+	background-size: contain;
+	margin-left: auto;
+	z-index: 1;
 }
 
 .apogee {
-    margin: -3rem 0;
+	margin: -3rem 0;
 }
 
 marquee {
-    padding: 10px;
-    position: fixed;
-    background: black;
-    color: white;
-    font-family: 'Poppins';
-    z-index: 3;
+	padding: 10px;
+	position: fixed;
+	background: black;
+	color: white;
+	font-family: 'Poppins';
+	z-index: 3;
 }
 
-.registerDisclaimer{
-    position: relative;
-    font-family: poppins;
-    display: inline-block;
-    width: 70%;
-    text-align: center;
-    margin-bottom: 2rem;
-    left:50%;
-    transform: translateX(-50%);
+.registerDisclaimer {
+	position: relative;
+	font-family: poppins;
+	display: inline-block;
+	width: 70%;
+	text-align: center;
+	margin-bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
