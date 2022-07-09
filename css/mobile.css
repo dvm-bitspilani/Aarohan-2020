@@ -72,7 +72,7 @@
 
     .landingBack {
 
-        background: transparent linear-gradient(180deg, #ffffff00 0%, #00000078 100%);
+        /* background: transparent linear-gradient(180deg, #ffffff00 0%, #00000078 100%); */
 
         filter: none;
     }
