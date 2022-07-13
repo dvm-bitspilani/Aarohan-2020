@@ -1,265 +1,190 @@
 @media only screen and (max-width: 600px) {
-    .background {
-        display: none;
-    }
-
-    .aboutQuote {
-
-        padding: 5% 0;
-
-        /* font-size: 0.9em; */
-
-    }
-
-    .aboutContainer {
-
-        height: auto;
-
-        padding: 10%;
-
-        font-size: 0.9em;
-    }
-
-    .landingBodyContainer {
-
-        font-size: 0.75em;
-
-        margin: -30% 0 0;
-
-        color: white;
-
-    }
-
-    .landingContainer {
-
-        flex-direction: column;
-
-        justify-content: center;
-
-        padding: 20% 0% 6%;
-
-        background-image: url(../assets/img/mobileBack.png);
-
-        background-size: inherit;
-
-        background-position-y: 6%;
-
-        background-position-x: 37%;
-
-    }
-
-    .landingFooter {
-
-        position: absolute;
-
-        bottom: 3%;
-
-        padding: 0 5%;
-
-        color: white;
-
-        font-size: 75%;
-
-    }
-
-    .landingFooterElements {
-        color: black;
-    }
-
-    .landingSubHeading {
-        transform: scale(0.8);
-    }
-
-    .landingBack {
-
-        /* background: transparent linear-gradient(180deg, #ffffff00 0%, #00000078 100%); */
-
-        filter: none;
-    }
-
-    .registrationContainer {
-
-        height: auto;
-
-        flex-direction: column;
-
-        flex-wrap: wrap;
-
-        padding-bottom: 10%;
-
-    }
-
-    .registerAsSchoolContainer {
-
-        float: left;
-
-        width: 100%;
-
-    }
-
-    .registerAsStudentContainer {
-
-        width: 100%;
-    }
-
-    .testimonialContainer {
-
-        height: 100vh;
-
-        background-color: #fafafa;
-
-        flex-direction: column;
-
-        box-sizing: border-box;
-
-        justify-content: space-between;
-
-        padding-bottom: 39%;
-
-    }
-
-    .testimonialBodyHead {
-
-        margin: 0 0 12%;
-
-    }
-
-    .testimonialBodyName {
-
-        font-weight: bold;
-
-    }
-
-    .testimonialBodyText {
-
-    }
-
-    .testimonialHeading{
-        text-align: center;
-    }
-
-    .footer {
-
-        flex-direction: column;
-
-    }
-
-    .contactElement {
-
-        font-family: gilroy-medium;
-
-    }
-
-    .contactElements {
-
-        font-size: 0.9em;
-
-        font-family: gilroy-light;
-
-        line-height: 1.5;
-
-    }
-
-    .registerElement {
-
-        width: 100%;
-
-    }
-
-    .registerElement h2 {
-
-        text-align: left;
-    }
-
-    .registerContact {
-
-        font-family: gilroy-light;
-
-        font-size: 0.9em;
-
-        text-align: left;
-
-        line-height: 1.5;
-
-        margin-bottom: 10px;
-
-    }
-
-    .registerCheckbox {
-
-        padding: 6px 0;
-    }
-
-    .registrationInputContainer label {
-
-        font-size: 0.75em;
-
-        text-align: center;
-    }
-
-    .registerDisclaimer{
-        font-size: 0.8em;
-    }
-
-    .swiper-container {
-        display: flex;
-    }
-
-    .testimonialBodyContainer {
-        display: none;
-    }
-
-    .buttonContainer input {
-        width: auto;
-    }
-
-    .faqelementcontainer {
-        padding: 0 2.8vw;
-    }
-
-    .faqHeading{
-        text-align: center;
-    }
-
-    .faqContainer {
-        padding: 6% 10%;
-    }
-
-    .faqbodycontainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wisenovaSide {
-        display: none;
-    }
-
-    .wisenovaText {
-        width: auto;
-        padding: 0 1%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .apogee {
-
-    }
-
-    .decoLine {
-
-        background: white;
-    }
-
-
-    .navHeader{
-        padding: 16px 4px;
-    }
-
-    #navBar {
-        width: 100%;
-    }
-    #view-more, #results{
-        margin: 10px auto;
-    }
+  .background {
+    display: none;
+  }
+
+  .aboutQuote {
+    padding: 5% 0; /* font-size: 0.9em; */
+  }
+
+  .aboutContainer {
+    height: auto;
+    padding: 10%;
+    font-size: 0.9em;
+  }
+
+  .landingBodyContainer {
+    font-size: 0.75em;
+    margin: -30% 0 0;
+    color: white;
+  }
+
+  .landingContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20% 0% 6%;
+    background-image: url(../assets/img/mobileBack.png);
+    background-size: inherit;
+    background-position-y: 6%;
+    background-position-x: 37%;
+  }
+
+  .landingFooter {
+    position: absolute;
+    bottom: 3%;
+    padding: 0 5%;
+    color: white;
+    font-size: 75%;
+  }
+
+  .landingFooterElements {
+    color: black;
+  }
+
+  .landingSubHeading {
+    transform: scale(0.8);
+  }
+
+  .landingBack {
+    /* background: transparent linear-gradient(180deg, #ffffff00 0%, #00000078 100%); */
+    filter: none;
+  }
+
+  .registrationContainer {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+  }
+
+  .registerAsSchoolContainer {
+    float: left;
+    width: 100%;
+  }
+
+  .registerAsStudentContainer {
+    width: 100%;
+  }
+
+  .testimonialContainer {
+    height: 100vh;
+    background-color: #fafafa;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-bottom: 39%;
+  }
+
+  .testimonialBodyHead {
+    margin: 0 0 12%;
+  }
+
+  .testimonialBodyName {
+    font-weight: bold;
+  }
+
+  .testimonialHeading {
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .contactElement {
+    font-family: gilroy-medium;
+  }
+
+  .contactElements {
+    font-size: 0.9em;
+    font-family: gilroy-light;
+    line-height: 1.5;
+  }
+
+  .registerElement {
+    width: 100%;
+  }
+
+  .registerElement h2 {
+    text-align: left;
+  }
+
+  .registerContact {
+    font-family: gilroy-light;
+    font-size: 0.9em;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .registerCheckbox {
+    padding: 6px 0;
+  }
+
+  .registrationInputContainer label {
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+  .registerDisclaimer {
+    font-size: 0.8em;
+  }
+
+  .swiper-container {
+    display: flex;
+  }
+
+  .testimonialBodyContainer {
+    display: none;
+  }
+
+  .buttonContainer input {
+    width: auto;
+  }
+
+  .faqelementcontainer {
+    padding: 0 2.8vw;
+  }
+
+  .faqHeading {
+    text-align: center;
+  }
+
+  .faqContainer {
+    padding: 6% 10%;
+  }
+
+  .faqbodycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wisenovaSide {
+    display: none;
+  }
+
+  .wisenovaText {
+    width: auto;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .decoLine {
+    background: white;
+  }
+
+  .navHeader {
+    padding: 16px 4px;
+  }
+
+  #navBar {
+    width: 100%;
+  }
+
+  #view-more,
+  #results {
+    margin: 10px auto;
+  }
 }
