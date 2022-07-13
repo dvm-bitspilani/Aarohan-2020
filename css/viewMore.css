@@ -2,8 +2,7 @@
   font-family: Poppins;
   display: flex;
   padding: 5% 0 5% 11%;
-  width: 100vw;
-  /* height: 100vh; */
+  width: 100vw; /* height: 100vh; */
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -16,7 +15,6 @@
 
 .headingContainer h1 {
   margin: 0;
-
   text-align: center;
 }
 
@@ -26,17 +24,13 @@
 
 .imageContainer {
   width: 31%;
-
   height: 45vh;
 }
 
 .hmvContainer {
   font-family: poppins;
-
   display: flex;
-
   font-size: 0.9em;
-
   color: #616161;
 }
 
@@ -46,13 +40,11 @@
 
 .hmvElements h1 {
   margin: 0;
-
   color: #4d4d4d;
 }
 
 .hmvElements h2 {
   margin: 0;
-
   color: #3e3e3e;
 }
 
@@ -77,46 +69,39 @@
 
 .detailsContainer p {
   margin-bottom: 5%;
-
   color: #616161;
 }
 
 .socialMedia {
   display: flex;
-
   justify-content: center;
 }
 
 .socialElements {
   width: 50px;
-
   height: 50px;
-
   border: 1px solid black;
-
   margin: 1%;
 }
 
-.imageP {
+.image-class {
   position: absolute;
   width: 20rem;
   left: 57%;
   top: 46%;
 }
 
-.grid{
-	display: grid;
-	grid-template-columns: auto auto;
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
 }
-
 
 .patternContainer {
   display: flex;
   flex-wrap: wrap;
   padding: 0 13%;
   margin-bottom: 2rem;
-  font-family: poppins;
-  /* height: 100vh; */
+  font-family: poppins; /* height: 100vh; */
   box-sizing: border-box;
   align-items: flex-start;
 }
@@ -151,8 +136,7 @@
 }
 
 .round {
-  /* width: 50%; */
-  /* height: 85vh; */
+  /* width: 50%; */ /* height: 85vh; */
   padding: 0 5% 0 0;
   box-sizing: border-box;
   display: flex;
@@ -166,33 +150,21 @@
 
 .button {
   margin: auto;
-  background: #f2cf19;
-
-  /* width: 46%; */
-
+  background: #f2cf19; /* width: 46%; */
   display: flex;
-
   justify-content: center;
-
   padding: 3%;
   margin-bottom: 3%;
-
   font-weight: bolder;
-
   border-radius: 8px;
-
   position: relative;
 }
 
 .background {
   overflow: visible;
-  position: absolute;
-  /* height: 100%; */
-  /* width: 100vw; */
+  position: absolute; /* height: 100%; */ /* width: 100vw; */
   box-sizing: border-box;
-  z-index: -1;
-  /* left: 0; */
-  /* padding-left: 16%; */
+  z-index: -1; /* left: 0; */ /* padding-left: 16%; */
 }
 
 body {
@@ -206,68 +178,48 @@ body {
   .one {
     display: none;
   }
-
   .two {
     display: none;
   }
-
   .landingContainer {
     flex-direction: column;
-
     width: 100vw;
-
     padding: 14% 5% 0;
-
     box-sizing: border-box;
-
     height: auto;
   }
-
   .textContainer p,
   .textContainer h2 {
     padding: 0 10%;
   }
-
-  .imageP {
+  .image-class {
     position: relative;
     left: 130px;
     top: -130px;
   }
-
   .background {
     width: 92vw;
   }
-
   .imageContainer {
-    /* transform: scale(0.5); */
-
-    /* width: 200vw; */
-
-	overflow: hidden;
-
+    /* transform: scale(0.5); */ /* width: 200vw; */
+    overflow: hidden;
     display: none;
   }
-
   .hmvContainer {
     padding-right: 5%;
-
     font-size: 0.8em;
   }
-
   .round {
     width: 100%;
     height: auto;
   }
-
   .button {
     width: fit-content;
     margin: 5% auto;
   }
-
   body {
     width: auto;
   }
-
   .navHeader {
     top: 0;
     padding: 8px 4px;
@@ -276,20 +228,16 @@ body {
 
 .hmvContainer {
   font-family: poppins;
-
   display: grid;
-
   padding: 2% 6%;
-
   font-size: 1.1em;
-
   color: #616161;
 }
 
-.hmvContainer .button{
-	width: max-content;
-	height: max-content;
-	padding: 1rem 2rem;
+.hmvContainer .button {
+  width: max-content;
+  height: max-content;
+  padding: 1rem 2rem;
 }
 
 .roundText,
@@ -299,7 +247,6 @@ body {
 
 .hmvElements h1 {
   margin: 0;
-
   color: #4d4d4d;
 }
 
@@ -322,38 +269,36 @@ body {
   font-family: Poppins;
   margin: 6rem 11%;
   margin-bottom: 2rem;
-  font-size: 1.4em;
+  font-size: 1.6rem;
+}
+
+.eventContainer {
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 1110px) {
-
-	.patternContainer{
-		margin-top: 8rem;
-	}
+  .patternContainer {
+    margin-top: 8rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-
-	.imageContainer{
-		display: none;
-	}
-
-	.headingContainer{
-		padding-right: 10vw;
-	}
-
-	.textContainer {
-		width: 90vw;
-		margin: auto;
-		text-align: justify;
-		padding: 0;
-	}
-
-	.textContainer p{
-		padding-right: 10vw;
-	}
-
-	.grid{
-		grid-template-columns: auto;
-	}
+  .imageContainer {
+    display: none;
+  }
+  .headingContainer {
+    padding-right: 10vw;
+  }
+  .textContainer {
+    width: 90vw;
+    margin: auto;
+    text-align: justify;
+    padding: 0;
+  }
+  .textContainer p {
+    padding-right: 10vw;
+  }
+  .grid {
+    grid-template-columns: auto;
+  }
 }
