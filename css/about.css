@@ -1,35 +1,40 @@
 .aboutContainer {
-    height: auto;
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    padding: 6% 11%;
-    padding-right: 43px;
-    box-sizing: border-box;
-    font-family: poppins;
-    background-color: #fafafa;
-    transition: 0.2s;
-    overflow: hidden;
-    /* display: flex; */
+  height: auto;
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6% 11%;
+  padding-right: 43px;
+  box-sizing: border-box;
+  font-family: poppins;
+  background-color: #fafafa;
+  transition: 0.2s;
+  overflow: hidden;
+  margin-bottom: -120px;
+  /* display: flex; */
+}
+
+#aboutContainer {
+  display: block;
 }
 
 .aboutHeading {
-    width: 100%;
-    font-family: poppins-semibold;
-    font-size: 2em;
-    margin-block-end: 3%;
+  width: 100%;
+  font-family: poppins-semibold;
+  font-size: 2em;
+  margin-block-end: 3%;
 }
 
-.aboutSubHeading{
-    width: 100%;
-    font-family: poppins-semibold;
-    font-size: 1.3em;
-    margin-block-end: 3%;
+.aboutSubHeading {
+  width: 100%;
+  font-family: poppins-semibold;
+  font-size: 1.3em;
+  margin-block-end: 3%;
 }
 
 .aboutQuote {
-    padding: 0 14%;
-    text-align: center;
-    font-weight: 800;
-    margin-block-end: 2.5%;
+  padding: 0 14%;
+  text-align: center;
+  font-weight: 800;
+  margin-block-end: 2.5%;
 }
