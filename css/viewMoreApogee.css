@@ -116,7 +116,7 @@ h2 {
 	margin: 1%;
 }
 
-.imageP {
+.image-class {
 	position: absolute;
 	left: 57%;
 	top: 46%;
@@ -201,7 +201,7 @@ body {
 		padding-right: 5%;
 	}
 
-	.imageP {
+	.image-class {
 		position: relative;
 		left: 130px;
 		top: -130px;
