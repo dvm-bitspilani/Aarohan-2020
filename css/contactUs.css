@@ -1,8 +1,4 @@
-body {
-  background-color: #111111;
-}
-
-.footer {
+.contact-us {
   color: white;
   background: #111111;
   display: flex;
@@ -26,6 +22,7 @@ body {
 
 .contactElement h2 {
   margin-block-start: 0;
+  font-size: 1.6rem;
   width: 100%;
 }
 
@@ -74,13 +71,6 @@ body {
   text-align: center;
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 .hamburgerLines {
   background: white;
   z-index: -1;
@@ -105,8 +95,13 @@ body {
   font-size: 1.5em;
 }
 
+.SubmitQueryHeading{
+  margin-bottom: 1.5rem;
+}
+
 textarea {
   width: 100%;
+  padding: 1rem;
   border-radius: 10px;
 }
 
@@ -189,28 +184,15 @@ input[type="number"] {
   text-align: center;
 }
 
+.queryForm input[type="text"]{
+  height: 2.2rem;
+}
+
 ::placeholder {
   font-family: Poppins;
   color: black;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f100;
-  padding: 1px;
-}
- /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
-}
- /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 @media screen and (max-width: 600px) {
   .contactElement h2 {

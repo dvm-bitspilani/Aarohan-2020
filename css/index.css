@@ -168,7 +168,9 @@ a {
   overflow: visible;
   position: absolute;
   height: 100%; /* width: 100vw; */
-  box-sizing: border-box; /* z-index: -1; */ /* left: 0; */ /* padding-left: 16%; */
+  box-sizing: border-box;
+  z-index: -1;
+  /* left: 0; */ /* padding-left: 16%; */
 }
 
 ::-webkit-scrollbar {
@@ -241,6 +243,9 @@ marquee {
   }
   .buttons {
     margin: 0;
+  }
+  .buttons .button{
+    max-width: none;
   }
 }
 

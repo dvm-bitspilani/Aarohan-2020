@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale = 1" />
+    <title>Aarohan 2023</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.css" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/about.css" rel="stylesheet" type="text/css" />
+    <link href="css/testimonial.css" rel="stylesheet" type="text/css" />
+    <link href="css/faq.css" rel="stylesheet" type="text/css" />
+    <link href="css/registration.css" rel="stylesheet" type="text/css" />
+    <link href="css/contactUs.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width= device-width, initial-scale = 1">
-	<title>Aarohan 2023</title>
-	<link rel="stylesheet" href="swiper/swiper-bundle.css" type="text/css">
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/nav.css" rel="stylesheet" type="text/css">
-	<link href="css/about.css" rel="stylesheet" type="text/css">
-	<link href="css/testimonial.css" rel="stylesheet" type="text/css">
-	<link href="css/faq.css" rel="stylesheet" type="text/css">
-	<link href="css/registration.css" rel="stylesheet" type="text/css">
-	<link href="css/footer.css" rel="stylesheet" type="text/css">
-	<link href="css/mobile.css" rel="stylesheet" type="text/css">
-	<link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> </head>
+  <body>
+    <div class="navHeader">
+      <div class="hamburger" onclick="openCloseNav()">
+        <div class="hamburgerLines"></div>
+        <div class="hamburgerLines"></div>
+        <div class="hamburgerLines"></div>
+      </div>
+    </div>
 
-<body>
-	<div class="navHeader">
-		<div class="hamburger" onclick="openCloseNav()">
-			<div class="hamburgerLines"></div>
-			<div class="hamburgerLines"></div>
-			<div class="hamburgerLines"></div>
-		</div>
-	</div>
-	<div id="navBar">
-		<a href="#landingContainer">
-			<div class="navElements">Home</div>
-		</a>
-		<a href="#aboutContainer">
-			<div class="navElements">About Us</div>
-		</a>
-		<a href="result.html">
-			<div class="navElements">Results</div>
-		</a>
-		<!-- <a href="#">
+    <div id="navBar">
+      <a href="#landingContainer">
+        <div class="navElements">Home</div>
+      </a>
+      <a href="#aboutContainer">
+        <div class="navElements">About Us</div>
+      </a>
+      <a href="#registrationContainer">
+         <div class="navElements">Register</div>
+      </a>
+      <!-- <a href="result.html">
+         <div class="navElements">Results</div>
+      </a> -->
+      <!-- <a href="#">
             <div class="navElements">Answer Key</div>
         </a> -->
-		<a href="#faqContainer">
-			<div class="navElements">FAQs</div>
-		</a>
-		<a href="./gallery.html">
-			<div class="navElements">Gallery</div>
-		</a>
-	</div>
-	</div>
-	<div class="wrapper" onclick="closeNav()" id="wrapper">
-		<marquee direction="right"> Registrations for Aarohan 2022-23 are open </marquee>
-		<div class="landingContainer" id="landingContainer">
-			<div class="landingBack"></div>
-			<div class="landingBodyContainer" id="landingBodyContainer">
-				<div class="landingHeading"> Aarohan 2023 </div>
-				<div class="landingSubHeading">
-					<div class="decoLine"></div> Ascent of Knowledge
-					<div class="decoLine"></div>
-				</div>
-				<!-- <div class="resultContainer" onclick="location.href='result.html';">
+      <a href="#faqContainer">
+        <div class="navElements">FAQs</div>
+      </a>
+      <a href="./gallery.html">
+        <div class="navElements">Gallery</div>
+      </a>
+    </div>
+
+    <div class="wrapper" onclick="closeNav()" id="wrapper">
+      <marquee direction="right">
+        Registrations for Aarohan 2022-23 are open
+      </marquee>
+
+      <div class="landingContainer" id="landingContainer">
+        <div class="landingBack"></div>
+        <div class="landingBodyContainer" id="landingBodyContainer">
+          <div class="landingHeading">Aarohan 2023</div>
+          <div class="landingSubHeading">
+            <div class="decoLine"></div>
+            Ascent of Knowledge
+            <div class="decoLine"></div>
+          </div>
+          <!-- <div class="resultContainer" onclick="location.href='result.html';">
                 Check Your Result
-            </div> --></div>
-			<!-- <div class="landingFooter">
+            </div> -->
+        </div>
+
+        <!-- <div class="landingFooter">
             <a href="#registerAsStudentContainer">
                 <div class="landingFooterElements">
                     Register as a student
@@ -70,53 +84,87 @@
                     Register as school
                 </div>
             </a>
-        </div> --></div>
-		<div class="aboutContainer" id="aboutContainer">
-			<div class="background"> <img src="assets/img/Group%2097.png" style="
-                        position: relative;
-                        top: 54%;
-                        left: -3%;
-                    "> <img src="assets/img/Group%2098.png" style="
-                        position: absolute;
-                        top: 5%;
-                        left: -14%;
-                    " /> <img src="assets/img/Group%2099.png" style="
-                        position: absolute;
-                        top: -5%;
-                        left: 30%;
-                    " /> <img src="assets/img/Group%20101.png" style="
-                        position: absolute;
-                        left: 58%;
-                        top: 68%;
-                    " /> <img src="assets/img/Group%20102.png" style="
-                        position: absolute;
-                        top: 22%;
-                        left: 64%;
-                    " /> <img src="assets/img/Group%20103.png" style="
-                        position: absolute;
-                        left: 50%;
-                        top: 4%;
-                    " /> </div>
-			<div class="aboutHeading"> About Us </div>
-			<div class="aboutBody">
-                Aarohan is a national-level olympiad crafted and conducted by the students of BITS Pilani, which aims to inculcate scientific temperament in the minds of the young generation. The examination is conducted for the classes IX, X, XI and XIIth. It is conducted in two rounds.  With this, we are trying to revive the lost essence of real education, which involves questioning the very fundamentals of any phenomenon. Aarohan has been growing exponentially ever since its inception in 2012. What started as a humble attempt to rekindle curiosity is now a nationwide event. We also made a mark on the international stage with participation from Abu Dhabi and Germany.
+        </div> -->
+      </div>
 
-                <h1>How Aarohan is Unique</h1>
-                When you register for Aarohan ,you register for an experience that strives more on teaching than testing. Apart from the main exam we offer a chance to interact with personalities ,each speaking in detail about a different horizon.                
+      <div class="aboutContainer" id="aboutContainer">
+        <div class="background">
+          <img
+            src="assets/img/Group%2097.png"
+            style="position: relative; top: 54%; left: -3%"
+          />
+          <img
+            src="assets/img/Group%2098.png"
+            style="position: absolute; top: 5%; left: -14%"
+          />
+          <img
+            src="assets/img/Group%2099.png"
+            style="position: absolute; top: -5%; left: 30%"
+          />
+          <img
+            src="assets/img/Group%20101.png"
+            style="position: absolute; left: 58%; top: 68%"
+          />
+          <img
+            src="assets/img/Group%20102.png"
+            style="position: absolute; top: 22%; left: 64%"
+          />
+          <img
+            src="assets/img/Group%20103.png"
+            style="position: absolute; left: 50%; top: 4%"
+          />
+        </div>
+        <div class="aboutHeading">About Us</div>
+        <div class="aboutBody">
+          Aarohan is a national-level olympiad crafted and conducted by the
+          students of BITS Pilani, which aims to inculcate scientific
+          temperament in the minds of the young generation. The examination is
+          conducted for the classes IX, X, XI and XIIth. It is conducted in two
+          rounds. With this, we are trying to revive the lost essence of real
+          education, which involves questioning the very fundamentals of any
+          phenomenon. Aarohan has been growing exponentially ever since its
+          inception in 2012. What started as a humble attempt to rekindle
+          curiosity is now a nationwide event. We also made a mark on the
+          international stage with participation from Abu Dhabi and Germany.
 
-                <h3>Round 1</h3>
-                Round one comprises a computer-based exam based on a single theme based on scientific phenomena. The paper would be multiple choice type, being 2 hours long. There are no prerequisites required to attempt the paper as the syllabus would be the same as the syllabus for the student's respective class, and it would be purely application based. The winners of round 1 are then invited to BITS Pilani to be a part of Round 2. <br><br>
+          <h1>How Aarohan is Unique</h1>
+          When you register for Aarohan ,you register for an experience that
+          strives more on teaching than testing. Apart from the main exam we
+          offer a chance to interact with personalities ,each speaking in detail
+          about a different horizon.
 
-                <div class="buttons">
-                <a href="https://drive.google.com/drive/folders/1VBc1YZTWYUwyLcf4zt9xKLfuZivOqfFo?usp=sharing" target="_blank" id="prev" class="button">
-                    Previous Year Papers
-                </a></div> <br><br>
+          <h3>Round 1</h3>
+          Round one comprises a computer-based exam based on a single theme
+          based on scientific phenomena. The paper would be multiple choice
+          type, being 2 hours long. There are no prerequisites required to
+          attempt the paper as the syllabus would be the same as the syllabus
+          for the student's respective class, and it would be purely application
+          based. The winners of round 1 are then invited to BITS Pilani to be a
+          part of Round 2. <br /><br />
 
-				<h3>Round 2</h3>
-                Round 2 is conducted during APOGEE. Team Aarohan conducts exclusive events for the students selected for round 2. Aarohan has seen a few events like Murder Mystery, Anti Chess, Parliamentary Mafia, Escape Room, Cryptic Wordhunt and many more. Round 2 participants get to meet the distinguished personalities who visit the campus during APOGEE, like the honourable Dr A.P.J Abdul Kalam, Prof. H C Verma, Dr.Walter Lewin, Jimmy Wales, Jefferey Archer and many more. <br><br>               
+          <div class="buttons">
+            <a
+              href="https://drive.google.com/drive/folders/1VBc1YZTWYUwyLcf4zt9xKLfuZivOqfFo?usp=sharing"
+              target="_blank"
+              id="prev"
+              class="button"
+            >
+              Previous Year Papers
+            </a>
+          </div>
+          <br /><br />
 
-            <div class="buttons">
-                <!-- <a href="https://drive.google.com/drive/folders/124Y5YhbUYmDw9D3Jr8e7C5Lc3_uBTYta?usp=sharing" class="button" target="_blank">
+          <h3>Round 2</h3>
+          Round 2 is conducted during APOGEE. Team Aarohan conducts exclusive
+          events for the students selected for round 2. Aarohan has seen a few
+          events like Murder Mystery, Anti Chess, Parliamentary Mafia, Escape
+          Room, Cryptic Wordhunt and many more. Round 2 participants get to meet
+          the distinguished personalities who visit the campus during APOGEE,
+          like the honourable Dr A.P.J Abdul Kalam, Prof. H C Verma, Dr.Walter
+          Lewin, Jimmy Wales, Jefferey Archer and many more. <br /><br />
+
+          <div class="buttons">
+            <!-- <a href="https://drive.google.com/drive/folders/124Y5YhbUYmDw9D3Jr8e7C5Lc3_uBTYta?usp=sharing" class="button" target="_blank">
                     Answer Key
                 </a>
                 <a href="https://drive.google.com/drive/folders/1yrpwxraEaX6XJ4-WyiH_CtjEZCh_-FNF" class="button" target="_blank">
@@ -125,419 +173,668 @@
                 <a href="https://bits-apogee.org/aarohan2022/result.html" class="button" id="results" target="_blank">
                     Check Results
                 </a> -->
-                <a href="viewMore.html" id="view-more" class="button">
-                    View More
-                </a>
-            </div> <br><br>
+            <a href="viewMore.html" id="view-more" class="button">
+              View More
+            </a>
+          </div>
+          <br /><br />
         </div>
+      </div>
+      <div class="aboutContainer">
+        <div class="background">
+          <img
+            src="assets/img/Group%2097.png"
+            style="position: relative; top: 54%; left: -3%"
+          />
+          <img
+            src="assets/img/Group%2098.png"
+            style="position: absolute; top: 5%; left: -14%"
+          />
+          <img
+            src="assets/img/Group%2099.png"
+            style="position: absolute; top: -5%; left: 30%"
+          />
+          <img
+            src="assets/img/Group%20101.png"
+            style="position: absolute; left: 58%; top: 68%"
+          />
+          <img
+            src="assets/img/Group%20102.png"
+            style="position: absolute; top: 22%; left: 64%"
+          />
+          <img
+            src="assets/img/Group%20103.png"
+            style="position: absolute; left: 50%; top: 4%"
+          />
         </div>
-		<div class="aboutContainer">
-			<div class="background"> <img src="assets/img/Group%2097.png" style="
-                        position: relative;
-                        top: 54%;
-                        left: -3%;
-                    "> <img src="assets/img/Group%2098.png" style="
-                        position: absolute;
-                        top: 5%;
-                        left: -14%;
-                    " /> <img src="assets/img/Group%2099.png" style="
-                        position: absolute;
-                        top: -5%;
-                        left: 30%;
-                    " /> <img src="assets/img/Group%20101.png" style="
-                        position: absolute;
-                        left: 58%;
-                        top: 68%;
-                    " /> <img src="assets/img/Group%20102.png" style="
-                        position: absolute;
-                        top: 22%;
-                        left: 64%;
-                    " /> <img src="assets/img/Group%20103.png" style="
-                        position: absolute;
-                        left: 50%;
-                        top: 4%;
-                    " /> </div>
-			<div class="wisenovaText">
-				<div class="enroll aboutHeading">Road To Aarohan</div>
-				<div class="enroll aboutSubHeading">"The doors closed to plain sight can only be opened by the dimensions of knowledge."</div>
-				<div class="aboutBody">
-                        The first student run Indian series aims to provide its participants an enriching experience in the form of workshops and seminars apart from the examination. The motivation behind this is to not limit the learning experience just with a time bound test rather take it to actual experience. You get to attend sessions on topics like career building, soft skills development, competitive preparation from the speakers you daily watch and admire. As a part of Road to Aarohan you will also get a chance to submit your project in the research exhibition conducted after aarohan round 1.
-                    <div class="enroll">
-                        <h2>ENROLLMENT PROCESS</h2>
-                        All participants who registered for Aarohan are default enrolled in this series. You are not expected to pay extra cost. This will be optional sessions which won't have impact over your performance and evaluation in round 1. Sounds interesting? Go ahead and register for Aarohan 2023
-                    </div>
-                </div>
+        <div class="wisenovaText">
+          <div class="enroll aboutHeading">Road To Aarohan</div>
+          <div class="enroll aboutSubHeading">
+            "The doors closed to plain sight can only be opened by the
+            dimensions of knowledge."
+          </div>
+          <div class="aboutBody">
+            The first student run Indian series aims to provide its participants
+            an enriching experience in the form of workshops and seminars apart
+            from the examination. The motivation behind this is to not limit the
+            learning experience just with a time bound test rather take it to
+            actual experience. You get to attend sessions on topics like career
+            building, soft skills development, competitive preparation from the
+            speakers you daily watch and admire. As a part of Road to Aarohan
+            you will also get a chance to submit your project in the research
+            exhibition conducted after aarohan round 1.
+            <div class="enroll">
+              <h2>ENROLLMENT PROCESS</h2>
+              All participants who registered for Aarohan are default enrolled
+              in this series. You are not expected to pay extra cost. This will
+              be optional sessions which won't have impact over your performance
+              and evaluation in round 1. Sounds interesting? Go ahead and
+              register for Aarohan 2023
             </div>
-			<div class="wisenovaSide"></div>
-		</div>
+          </div>
+          <div class="buttons">
+            <a
+              href="#registrationContainer"
+              target="_blank"
+              id="prev"
+              class="button"
+            >
+                Register
+            </a>
+          </div>
+        </div>
+        <div class="wisenovaSide"></div>
+      </div>
 
-		<div class="aboutContainer apogee">
-			<div class="background"> <img src="assets/img/Group%2097.png" style="
-                        position: relative;
-                        top: 48%;
-                        left: 77%;
-                    "> <img src="assets/img/Group%2098.png" style="
-                        position: absolute;
-                        top: 5%;
-                        left: 66%;
-                    " /> <img src="assets/img/Group%2099.png" style="
-                        position: absolute;
-                        top: 13%;
-                        left: -3%;
-                    " /> <img src="assets/img/Group%20101.png" style="
-                        position: absolute;
-                        left: 22%;
-                        top: 68%;
-                    " /> <img src="assets/img/Group%20102.png" style="
-                        position: absolute;
-                        top: 32%;
-                        left: -13%;
-                    " /> <img src="assets/img/Group%20103.png" style="
-                        position: absolute;
-                        left: 35%;
-                        top: -4%;
-                    " /> </div>
-			<div class="aboutHeading"> About Apogee </div>
-			<div class="aboutBody">
-                APOGEE, the international annual technical fest of BITS Pilani is one of the largest technological symposiums in the country. Truly justifying its dictionary meaning as "the highest point", Apogee signifies the zenith of science, engineering and path-breaking technology in a landscape of future visionaries, scientists, corporate bigwigs and inventors. APOGEE enjoys a footfall of over 8000 students from more than 100 colleges nationwide. Dr A.P.J. Abdul Kalam, Mugdha Saini, Danielle Feinberg, Simon Taufel, Stephen P Morse, Rakesh Sharma and many more distinguished personalities have been a part of APOGEE. Technical Events like Full Throttle Grand Prix, Indian Navy Demo, IDRL (Indian Drone Race League), International Coding League, Robots-at-War, and many more sum up to 80+ events which steer to challenge the intellect of the participants and pique the minds of the audience.
-            </div>
+      <div class="aboutContainer apogee">
+        <div class="background">
+          <img
+            src="assets/img/Group%2097.png"
+            style="position: relative; top: 48%; left: 77%"
+          />
+          <img
+            src="assets/img/Group%2098.png"
+            style="position: absolute; top: 5%; left: 66%"
+          />
+          <img
+            src="assets/img/Group%2099.png"
+            style="position: absolute; top: 13%; left: -3%"
+          />
+          <img
+            src="assets/img/Group%20101.png"
+            style="position: absolute; left: 22%; top: 68%"
+          />
+          <img
+            src="assets/img/Group%20102.png"
+            style="position: absolute; top: 32%; left: -13%"
+          />
+          <img
+            src="assets/img/Group%20103.png"
+            style="position: absolute; left: 35%; top: -4%"
+          />
         </div>
-        
-		<div class="testimonialback">
-			<div class="testimonialContainer">
-				<div class="testimonialHeading"> Testimonials </div>
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="testimonialBodyHead"></div>
-							<div class="testimonialBodyText">
-                                Aarohan is beneficial and identifies the finest of the minds among the participants through its comprehensive, IQ & logical reasoning-based tests and events, similar to NTSE.
-                            </div>
-							<div class="testimonialBodyName">Akshita Tejwani (Winner Round-2 Aarohan 2022)
-                            </div>
-						</div>
-						<div class="swiper-slide">
-							<div class="testimonialBodyHead"></div>
-							<div class="testimonialBodyText">It's a great opportunity and you get to learn and experience various new, innovative things. The team challenges were fun and you learn how to think on the spot and coordinate with brilliant minds that you haven't met before from around the country. The talks were inspiring as well since you get to hear ingenious people talk about their experiences and ask them questions. I felt really privileged and excited to attend the second round.
-                            </div>
-							<div class="testimonialBodyName">Shreya Bhoi, R. N Podar School, Santacruz (West),  Mumbai (Winner Aarohan 2022)
-                            </div>
-						</div>
-						<div class="swiper-slide">
-							<div class="testimonialBodyHead"></div>
-							<div class="testimonialBodyText">You should definitely participate in this exam. It cannot even be called an exam. It's more like an experience which everyone should experience. It's really fulfilling and enriching experience and you will definitely enjoy every part of it.
-                            </div>
-							<div class="testimonialBodyName"> Kamya Singh, Smt. Sulochanadevi Singnaia School (Winner, Aarohan 2022)</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="testimonialBodyHead"></div>
-							<div class="testimonialBodyText">I would like to suggest all my friends and schoolmates to participate in Aarohan because I have great experience in level 1 and level 2 about science learning on application based criteria It was very interesting , brain challenging and learning experience. It was great fun to join with all Admins. I also like to participate in future till my last attempt as I am in grade 9 now. Thank you so much all the Admins for such a wonderful event for us.
-                            </div>
-							<div class="testimonialBodyName"> Anish Gajanan Parlikar (Participant Aarohan 2022)                            </div>
-						</div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-				</div>
-				<div class="testimonialBodyContainer">
-					<div class="testimonialBodyElements">
-						<div class="testimonialBodyHead"></div>
-						<div class="testimonialBodyText"> It's a great opportunity and you get to learn and experience various new, innovative things. The team challenges were fun and you learn how to think on the spot and coordinate with brilliant minds that you haven't met before from around the country. The talks were inspiring as well since you get to hear ingenious people talk about their experiences and ask them questions. I felt really privileged and excited to attend the second round.
-                        </div>
-						<div class="testimonialBodyName">Shreya Bhoi, R. N Podar School, Santacruz (West),  Mumbai (Winner Aarohan 2022)
-                        </div>
-					</div>
-                    <div>
-					    <div class="testimonialBodyElements">
-						    <div class="testimonialBodyHead"></div>
-						    <div class="testimonialBodyText">You should definitely participate in this exam. It cannot even be called an exam. It's more like an experience which everyone should experience. It's really fulfilling and enriching experience and you will definitely enjoy every part of it.                       </div>
-                            <div class="testimonialBodyName"> Kamya Singh, Smt. Sulochanadevi Singnaia School (Winner, Aarohan 2022)</div>
-					    </div>
-					    <div class="testimonialBodyElements" style="margin-top: 2rem;">
-						    <div class="testimonialBodyHead"></div>
-						    <div class="testimonialBodyText"> Aarohan is beneficial and identifies the finest of the minds among the participants through its comprehensive, IQ & logical reasoning-based tests and events, similar to NTSE. 
-                            </div>
-						    <div class="testimonialBodyName"> Akshita Tejwani (Winner Round-2 Aarohan 2022)
-                            </div>
-					    </div>
-                    </div>
-					<div class="testimonialBodyElements">
-						<div class="testimonialBodyHead"></div>
-						<div class="testimonialBodyText">
-                            I would like to suggest all my friends and schoolmates to participate in Aarohan because I have great experience in level 1 and level 2 about science learning on application based criteria It was very interesting , brain challenging and learning experience. It was great fun to join with all Admins. I also like to participate in future till my last attempt as I am in grade 9 now. Thank you so much all the Admins for such a wonderful event for us.
-                        </div>
-					<div class="testimonialBodyName">Anish Gajanan Parlikar (Participant Aarohan 2022)</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="faqContainer" id="faqContainer">
-			<div class="background"> <img src="assets/img/Group%2097.png" style="
-                        position: relative;
-                        top: 48%;
-                        left: 77%;
-                    "> <img src="assets/img/Group%2098.png" style="
-                        position: absolute;
-                        top: 5%;
-                        left: 66%;
-                    " /> <img src="assets/img/Group%2099.png" style="
-                        position: absolute;
-                        top: 13%;
-                        left: -3%;
-                    " /> <img src="assets/img/Group%20101.png" style="
-                        position: absolute;
-                        left: 22%;
-                        top: 68%;
-                    " /> <img src="assets/img/Group%20102.png" style="
-                        position: absolute;
-                        top: 32%;
-                        left: -13%;
-                    " /> <img src="assets/img/Group%20103.png" style="
-                        position: absolute;
-                        left: 35%;
-                        top: -4%;
-                    " /> </div>
-			<div class="faqHeading"> Frequently Asked Questions </div>
-			<div class="faqbodycontainer">
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:Who all are eligible for the exam? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> Students of classes 9-10 and 11-12 (Science with Mathematics), studying in school affiliated with any board are eligible to appear in the exam. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:How will the exam be conducted? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The exam will be conducted in Online Mode. All the registered students will be getting their login credentials and Admit cards with the link for the online examination portal. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:What is the exam pattern? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The exam focuses on enriching the application skill-set of the students, rather than testing the memory. A set of passages with a unifying scientific phenomenon is provided, based on which MCQs are given. For sample papers, click on the link </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:How credible is the paper, since it's designed by a student body? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The paper made by the organizing committee would be proof-read by a panel of Professors and the credibility of the paper is unquestionable. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:What would the students gain? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The paper aims to inculcate scientific temperament and evoke the curiosity of a student. It requires no preparation and is completely IQ based. Regional winners get loads of goodies among other benefits and the national winners get to visit BITS Pilani during APOGEE-our international annual technical festival, with all events expenses taken care of. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:What is the registration process? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The students are required to register themselves on our website. If a school wants to register their students, they can reach out to us for registering the students on the behalf of the school. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:What is the exam/registration fee? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The exam fee is Rs 150 per student, to be paid online on our website. </div>
-				</div>
-				<div class="faqelementcontainer">
-					<div class="faqquestion"> Q:How is this different from other Olympiads? </div>
-					<div class="icon">
-						<div class="verticalline"></div>
-						<div class="horizontalline"></div>
-					</div>
-					<div class="faqanswer"> The examination, unlike many others, doesn't stress on solving more problems in less time, but focuses more on helping increase the intellect and the problem-solving ability of the student. </div>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="background">
-        <img src="assets/img/Group%2097.png" style="
-                    position: relative;
-                    top: 48%;
-                    left: 77%;
-                ">
-        <img src="assets/img/Group%2098.png" style="
-                    position: absolute;
-                    top: 5%;
-                    left: 66%;
-                "/>
-        <img src="assets/img/Group%2099.png" style="
-                    position: absolute;
-                    top: 13%;
-                    left: -3%;
-                "/>
-        <img src="assets/img/Group%20101.png" style="
-                    position: absolute;
-                    left: 22%;
-                    top: 68%;
-                "/>
-        <img src="assets/img/Group%20102.png" style="
-                    position: absolute;
-                    top: 32%;
-                    left: -13%;
-                "/>
-        <img src="assets/img/Group%20103.png" style="
-                    position: absolute;
-                    left: 35%;
-                    top: -4%;
-                "/>
-    </div> -->
-	<!-- <div class="registrationContainer" id="registrationContainer">
+        <div class="aboutHeading">About Apogee</div>
+        <div class="aboutBody">
+          APOGEE, the international annual technical fest of BITS Pilani is one
+          of the largest technological symposiums in the country. Truly
+          justifying its dictionary meaning as "the highest point", Apogee
+          signifies the zenith of science, engineering and path-breaking
+          technology in a landscape of future visionaries, scientists, corporate
+          bigwigs and inventors. APOGEE enjoys a footfall of over 8000 students
+          from more than 100 colleges nationwide. Dr A.P.J. Abdul Kalam, Mugdha
+          Saini, Danielle Feinberg, Simon Taufel, Stephen P Morse, Rakesh Sharma
+          and many more distinguished personalities have been a part of APOGEE.
+          Technical Events like Full Throttle Grand Prix, Indian Navy Demo, IDRL
+          (Indian Drone Race League), International Coding League,
+          Robots-at-War, and many more sum up to 80+ events which steer to
+          challenge the intellect of the participants and pique the minds of the
+          audience.
+        </div>
+      </div>
+
+      <div class="testimonialback">
+        <div class="testimonialContainer">
+          <div class="testimonialHeading">Testimonials</div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  Aarohan is beneficial and identifies the finest of the minds
+                  among the participants through its comprehensive, IQ & logical
+                  reasoning-based tests and events, similar to NTSE.
+                </div>
+                <div class="testimonialBodyName">
+                  Akshita Tejwani (Winner Round-2 Aarohan 2022)
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  It's a great opportunity and you get to learn and experience
+                  various new, innovative things. The team challenges were fun
+                  and you learn how to think on the spot and coordinate with
+                  brilliant minds that you haven't met before from around the
+                  country. The talks were inspiring as well since you get to
+                  hear ingenious people talk about their experiences and ask
+                  them questions. I felt really privileged and excited to attend
+                  the second round.
+                </div>
+                <div class="testimonialBodyName">
+                  Shreya Bhoi, R. N Podar School, Santacruz (West), Mumbai
+                  (Winner Aarohan 2022)
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  You should definitely participate in this exam. It cannot even
+                  be called an exam. It's more like an experience which everyone
+                  should experience. It's really fulfilling and enriching
+                  experience and you will definitely enjoy every part of it.
+                </div>
+                <div class="testimonialBodyName">
+                  Kamya Singh, Smt. Sulochanadevi Singnaia School (Winner,
+                  Aarohan 2022)
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  I would like to suggest all my friends and schoolmates to
+                  participate in Aarohan because I have great experience in
+                  level 1 and level 2 about science learning on application
+                  based criteria It was very interesting , brain challenging and
+                  learning experience. It was great fun to join with all Admins.
+                  I also like to participate in future till my last attempt as I
+                  am in grade 9 now. Thank you so much all the Admins for such a
+                  wonderful event for us.
+                </div>
+                <div class="testimonialBodyName">
+                  Anish Gajanan Parlikar (Participant Aarohan 2022)
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="testimonialBodyContainer">
+            <div class="testimonialBodyElements">
+              <div class="testimonialBodyHead"></div>
+              <div class="testimonialBodyText">
+                It's a great opportunity and you get to learn and experience
+                various new, innovative things. The team challenges were fun and
+                you learn how to think on the spot and coordinate with brilliant
+                minds that you haven't met before from around the country. The
+                talks were inspiring as well since you get to hear ingenious
+                people talk about their experiences and ask them questions. I
+                felt really privileged and excited to attend the second round.
+              </div>
+              <div class="testimonialBodyName">
+                Shreya Bhoi, R. N Podar School, Santacruz (West), Mumbai (Winner
+                Aarohan 2022)
+              </div>
+            </div>
+            <div>
+              <div class="testimonialBodyElements">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  You should definitely participate in this exam. It cannot even
+                  be called an exam. It's more like an experience which everyone
+                  should experience. It's really fulfilling and enriching
+                  experience and you will definitely enjoy every part of it.
+                </div>
+                <div class="testimonialBodyName">
+                  Kamya Singh, Smt. Sulochanadevi Singnaia School (Winner,
+                  Aarohan 2022)
+                </div>
+              </div>
+              <div class="testimonialBodyElements" style="margin-top: 2rem">
+                <div class="testimonialBodyHead"></div>
+                <div class="testimonialBodyText">
+                  Aarohan is beneficial and identifies the finest of the minds
+                  among the participants through its comprehensive, IQ & logical
+                  reasoning-based tests and events, similar to NTSE.
+                </div>
+                <div class="testimonialBodyName">
+                  Akshita Tejwani (Winner Round-2 Aarohan 2022)
+                </div>
+              </div>
+            </div>
+            <div class="testimonialBodyElements">
+              <div class="testimonialBodyHead"></div>
+              <div class="testimonialBodyText">
+                I would like to suggest all my friends and schoolmates to
+                participate in Aarohan because I have great experience in level
+                1 and level 2 about science learning on application based
+                criteria It was very interesting , brain challenging and
+                learning experience. It was great fun to join with all Admins. I
+                also like to participate in future till my last attempt as I am
+                in grade 9 now. Thank you so much all the Admins for such a
+                wonderful event for us.
+              </div>
+              <div class="testimonialBodyName">
+                Anish Gajanan Parlikar (Participant Aarohan 2022)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faqContainer" id="faqContainer">
+        <div class="background">
+          <img
+            src="assets/img/Group%2097.png"
+            style="position: relative; top: 48%; left: 77%"
+          />
+          <img
+            src="assets/img/Group%2098.png"
+            style="position: absolute; top: 5%; left: 66%"
+          />
+          <img
+            src="assets/img/Group%2099.png"
+            style="position: absolute; top: 13%; left: -3%"
+          />
+          <img
+            src="assets/img/Group%20101.png"
+            style="position: absolute; left: 22%; top: 68%"
+          />
+          <img
+            src="assets/img/Group%20102.png"
+            style="position: absolute; top: 32%; left: -13%"
+          />
+          <img
+            src="assets/img/Group%20103.png"
+            style="position: absolute; left: 35%; top: -4%"
+          />
+        </div>
+        <div class="faqHeading">Frequently Asked Questions</div>
+        <div class="faqbodycontainer">
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:Who all are eligible for the exam?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              Students of classes 9-10 and 11-12 (Science with Mathematics),
+              studying in school affiliated with any board are eligible to
+              appear in the exam.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:How will the exam be conducted?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The exam will be conducted in Online Mode. All the registered
+              students will be getting their login credentials and Admit cards
+              with the link for the online examination portal.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:What is the exam pattern?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The exam focuses on enriching the application skill-set of the
+              students, rather than testing the memory. A set of passages with a
+              unifying scientific phenomenon is provided, based on which MCQs
+              are given. For sample papers, click on the link
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">
+              Q:How credible is the paper, since it's designed by a student
+              body?
+            </div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The paper made by the organizing committee would be proof-read by
+              a panel of Professors and the credibility of the paper is
+              unquestionable.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:What would the students gain?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The paper aims to inculcate scientific temperament and evoke the
+              curiosity of a student. It requires no preparation and is
+              completely IQ based. Regional winners get loads of goodies among
+              other benefits and the national winners get to visit BITS Pilani
+              during APOGEE-our international annual technical festival, with
+              all events expenses taken care of.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:What is the registration process?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The students are required to register themselves on our website.
+              If a school wants to register their students, they can reach out
+              to us for registering the students on the behalf of the school.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">Q:What is the exam/registration fee?</div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The exam fee is Rs 150 per student, to be paid online on our
+              website.
+            </div>
+          </div>
+          <div class="faqelementcontainer">
+            <div class="faqquestion">
+              Q:How is this different from other Olympiads?
+            </div>
+            <div class="icon">
+              <div class="verticalline"></div>
+              <div class="horizontalline"></div>
+            </div>
+            <div class="faqanswer">
+              The examination, unlike many others, doesn't stress on solving
+              more problems in less time, but focuses more on helping increase
+              the intellect and the problem-solving ability of the student.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background">
+        <img
+          src="assets/img/Group%2097.png"
+          style="position: relative; top: 48%; left: 77%"
+        />
+        <img
+          src="assets/img/Group%2098.png"
+          style="position: absolute; top: 5%; left: 66%"
+        />
+        <img
+          src="assets/img/Group%2099.png"
+          style="position: absolute; top: 13%; left: -3%"
+        />
+        <img
+          src="assets/img/Group%20101.png"
+          style="position: absolute; left: 22%; top: 68%"
+        />
+        <img
+          src="assets/img/Group%20102.png"
+          style="position: absolute; top: 32%; left: -13%"
+        />
+        <img
+          src="assets/img/Group%20103.png"
+          style="position: absolute; left: 35%; top: -4%"
+        />
+      </div>
+      <div class="registrationContainer" id="registrationContainer">
         <div class="registerAsStudentContainer" id="registerAsStudentContainer">
-            <div class="registerStudentHeading">
-                Registration Portal
+          <div class="registerStudentHeading">Registration Portal</div>
+          <form class="registrationForm" name="studentreg">
+            <label for="name">Student Name</label>
+            <input name="full_name" size="12" type="text" id="full_name" />
+            <label for="father">Father (or Mother) Name</label>
+            <input
+              name="fathers_name"
+              size="12"
+              type="text"
+              id="fathers_name"
+            />
+            <label for="school">School (or Institute)</label>
+            <input name="school_name" size="50" type="text" id="school_name" />
+            <label for="phone">Mobile Number</label>
+            <input name="contact_no" type="text" id="contact_no" />
+            <label>Class</label>
+            <div class="registrationCheckContainer">
+              <input id="9" name="studying_in_class" type="radio" value="9" />
+              <label class="registerCheckbox" for="9"> Class 09 </label>
+              <input
+                checked
+                id="10"
+                name="studying_in_class"
+                type="radio"
+                value="10"
+              />
+              <label class="registerCheckbox" for="10"> Class 10 </label>
+              <input id="11" name="studying_in_class" type="radio" value="11" />
+              <label class="registerCheckbox" for="11"> Class 11 </label>
+              <input id="12" name="studying_in_class" type="radio" value="12" />
+              <label class="registerCheckbox" for="12"> Class 12 </label>
             </div>
-            <form class="registrationForm" name='studentreg'>
-
-                <label for="name">Student Name</label>
-                <input name="full_name" size="12" type="text" id="full_name"/>
-                <label for="father">Father (or Mother) Name</label>
-                <input name="fathers_name" size="12" type="text" id="fathers_name"/>
-                <label for="school">School (or Institute)</label>
-                <input name="school_name" size="50" type="text" id="school_name"/>
-                <label for="phone">Mobile Number</label>
-                <input name="contact_no" type="text" id="contact_no"/>
-                <label>Class</label>
-                <div class="registrationCheckContainer">
-                    <input id="9" name="studying_in_class" type="radio" value="9"/>
-                    <label class="registerCheckbox" for="9">
-                        Class 9
-                    </label>
-                    <input checked id="10" name="studying_in_class" type="radio" value="10"/>
-                    <label class="registerCheckbox" for="10">
-                        Class 10
-                    </label>
-                    <input id="11" name="studying_in_class" type="radio" value="11"/>
-                    <label class="registerCheckbox" for="11">
-                        Class 11
-                    </label>
-                    <input id="12" name="studying_in_class" type="radio" value="12"/>
-                    <label class="registerCheckbox" for="12">
-                        Class 12
-                    </label>
-                </div>
-                <label style="width: 45%">
-                    State
-                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name="state"
-                            class="form-control" ></select>
-                </label>
-                <label style="width: 45%">
-                    City
-                    <select id="state" class="form-control"  name="city"></select>
-                </label>
-                <label for="email">Email ID</label>
-                <input id="email" name="email_id" size="50" type="text"/>
-                <div class="buttonContainer">
-                    <input class="cancelButton" type="button" value="Cancel" onclick="cancel();"/>
-                    <input class="submitButton" name="submit_student" type="submit" value="Submit"/>
-                </div>
-            </form>
+            <label style="width: 45%">
+              State
+              <select
+                onchange="print_city('state', this.selectedIndex);"
+                id="sts"
+                name="state"
+                class="form-control"
+              ></select>
+            </label>
+            <label style="width: 45%">
+              City
+              <select id="state" class="form-control" name="city"></select>
+            </label>
+            <label for="email">Email ID</label>
+            <input id="email" name="email_id" size="50" type="text" />
+            <div class="buttonContainer">
+              <input
+                class="cancelButton"
+                type="button"
+                value="Cancel"
+                onclick="cancel();"
+              />
+              <input
+                class="submitBtn"
+                name="submit_student"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
         </div>
         <!-- <div class="registerAsSchoolContainer" id="registerAsSchoolContainer">
-            <div class="registerSchoolHeading">
-                Register As School
+          <div class="registerSchoolHeading">Register As School</div>
+          <form class="registrationForm" name="schoolreg">
+            <label
+              >School Name
+              <input
+                id="school_name"
+                name="school_name"
+                placeholder="Vidya Mandir Delhi"
+                size="12"
+                type="text"
+              />
+            </label>
+            <label
+              >School POC Name
+              <input
+                id="school_poc_name"
+                name="school_poc_name"
+                placeholder="Vidya Mandir Delhi"
+                size="12"
+                type="text"
+              />
+            </label>
+            <label style="width: 45%">
+              State
+              <select
+                onchange="print_city2('state2', this.selectedIndex);"
+                id="sts2"
+                name="state"
+                class="form-control"
+              ></select>
+            </label>
+            <label style="width: 45%">
+              City
+              <select id="state2" class="form-control2" name="city"></select>
+            </label>
+            <label>
+              Contact No. Of In charge
+              <input
+                name="contact_no"
+                placeholder="8545811530"
+                size="50"
+                type="text"
+              />
+            </label>
+            <label>
+              Email
+              <input name="email_id" type="text" />
+            </label>
+            <label> Class-wise split up of no of students: </label>
+            <div class="registrationInputContainer">
+              <label>
+                Class 09
+                <input name="ninth_class_students" type="number" />
+              </label>
+              <label>
+                Class 10
+                <input name="tenth_class_students" type="number" />
+              </label>
+              <label>
+                Class 11
+                <input name="eleventh_class_students" type="number" />
+              </label>
+              <label>
+                Class 12
+                <input name="twelfth_class_students" type="number" />
+              </label>
             </div>
-            <form class="registrationForm" name='schoolreg'>
-                <label>School Name
-                    <input id="school_name" name="school_name" placeholder="Vidya Mandir Delhi" size="12" type="text"/>
-                </label>
-                <label>School POC Name
-                    <input id="school_poc_name" name="school_poc_name" placeholder="Vidya Mandir Delhi" size="12"
-                           type="text"/>
-                </label>
-                <label style="width: 45%">
-                    State
-                    <select onchange="print_city2('state2', this.selectedIndex);" id="sts2" name="state"
-                            class="form-control" ></select>
-                </label>
-                <label style="width: 45%">
-                    City
-                    <select id="state2" class="form-control2"  name="city"></select>
-                </label>
-                <label>
-                    Contact No. Of In charge
-                    <input name="contact_no" placeholder="8545811530" size="50" type="text"/>
-                </label>
-                <label>
-                    Email
-                    <input name="email_id" type="text">
-                </label>
-                <label>
-                    Class-wise split up of no of students:
-                </label>
-                <div class="registrationInputContainer">
-                    <label>
-                        Class 9
-                        <input name="ninth_class_students" type="number"/>
-                    </label>
-                    <label>
-                        Class 10
-                        <input name="tenth_class_students" type="number"/>
-                    </label>
-                    <label>
-                        Class 11
-                        <input name="eleventh_class_students" type="number"/>
-                    </label>
-                    <label>
-                        Class 12
-                        <input name="twelfth_class_students" type="number"/>
-                    </label>
-                </div>
-                <label>
-                    Total Amount to be Paid
-                    <input name="total_amount_paid" size="50" type="text"/>
-                </label>
-                <div class="buttonContainer">
-                    <input class="cancelButton" type="button" value="Cancel" onclick="cancel()"/>
-                    <input class="submitButton" name="submit" type="submit" value="Submit"/>
-                </div>
-            </form>
-        </div>
+            <label>
+              Total Amount to be Paid
+              <input name="total_amount_paid" size="50" type="text" />
+            </label>
+            <div class="buttonContainer">
+              <input
+                class="cancelButton"
+                type="button"
+                value="Cancel"
+                onclick="cancel()"
+              />
+              <input
+                class="submitButton"
+                name="submit"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+        </div> -->
+      </div>
+      <div class="registerDisclaimer">
+        Note: Registration Fee is Rs. 150/-. <br />
+        If you are unable to register, please try updating your browser.
+      </div>
     </div>
-    <div class="registerDisclaimer">Note: Registration Fee is Rs. 150/-. <br> If you are unable to register, please try updating your browser.</div> -->
 
-		<!--    <div class="footer" id="footer">-->
-		<!--        <div class="contactElement">-->
-		<!--            <h2>Contact Us</h2>-->
-		<!--            <div class="contactElements">Name<br>Designation<br>abcd.xyz@gmail.com</div>-->
-		<!--            <div class="contactElements">Name<br>Designation<br>abcd.xyz@gmail.com</div>-->
-		<!--        </div>-->
-		<!--        <div class="registerElement">-->
-		<!--            <h2>For Registration:</h2>-->
-		<!--            <div class="registerContact">Lokhan Bhansali (West)<br>9898959694</div>-->
-		<!--            <div class="registerContact">Lokhan Bhansali (West)<br>9898959694</div>-->
-		<!--            <div class="registerContact">Lokhan Bhansali (West)<br>9898959694</div>-->
-		<!--            <div class="registerContact">Lokhan Bhansali (West)<br>9898959694</div>-->
-		<!--        </div>-->
-		<!--    </div>-->
-	</div>
-</body>
-<script src="js/cities.js"></script>
-<script language="javascript">
-print_state("sts");
-</script>
-<script language="javascript">
-print_state2("sts2");
-</script>
-<script src="swiper/swiper-bundle.min.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/index.js"></script>
-<script src="js/faq.js"></script>
-<script src="js/formvalid.js"></script>
+    <div class="contact-us" id="contact-us">
+      <div class="contactElement">
+        <h2>Contact Us</h2>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Yashwardhan.jpg" alt="" />
+          </div>
+          <div class="contactinfo">
+            Yashwardhan NaikNimbalkar<br />Coordinator<br />+91-8484833236
+          </div>
+        </div>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Harshit.png" alt="" />
+          </div>
+          <div class="contactinfo">
+            Harshit Garg<br />Joint Coordinator<br />+91- 9354267461
+          </div>
+        </div>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Ram.jpg" alt="" />
+          </div>
+          <div class="contactinfo">
+            Ram Nachiappan <br />Joint Coordinator<br />+91- 9597949986
+          </div>
+        </div>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Hrishit.jpg" alt="" />
+          </div>
+          <div class="contactinfo">
+            Hrishit Das <br />Knowledge Team Head <br />+91-7470626299
+          </div>
+        </div>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Kanika.jpg" alt="" />
+          </div>
+          <div class="contactinfo">
+            Kanika Garg <br />Design and Publicity Head <br />+91-6376101648
+          </div>
+        </div>
+        <div class="contactElements">
+          <div class="contactimage">
+            <img src="assets/gallery/Nischay.jpg" alt="" />
+          </div>
+          <div class="contactinfo">
+            Nischay Khandelwal <br />Logistics Head <br />+91-8375850166
+          </div>
+        </div>
+      </div>
 
+      <div class="queryContainer">
+        <div class="submitQuery" id="submitQuery">
+          <div class="SubmitQueryHeading">Submit Query</div>
+          <form class="queryForm" name="query">
+            <label for="full_name">Full Name</label>
+            <input name="full_name" size="12" type="text" id="full_name" />
+            <label for="email_id">Email ID</label>
+            <input id="email_id" name="email_id" size="50" type="text" />
+            <label for="contact_no">Phone Number</label>
+            <input name="contact_no" type="text" id="contact_no" />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              style="height: 100px"
+            ></textarea>
+            <div class="buttonContainer">
+              <input
+                class="submitButton"
+                name="submit_student"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/cities.js"></script>
+  <script language="javascript">
+    print_state("sts");
+  </script>
+  <script language="javascript">
+    print_state2("sts2");
+  </script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/contactUs.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/formvalid.js"></script>
 </html>

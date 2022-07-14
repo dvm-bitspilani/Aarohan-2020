@@ -87,7 +87,7 @@
     text-align: center;
   }
   
-  .footer {
+  .contact-us {
     flex-direction: column;
   }
   
@@ -115,10 +115,6 @@
     text-align: left;
     line-height: 1.5;
     margin-bottom: 10px;
-  }
-  
-  .registerCheckbox {
-    padding: 6px 0;
   }
   
   .registrationInputContainer label {
@@ -181,11 +177,6 @@
   
   #navBar {
     width: 100%;
-  }
-  
-  #view-more,
-  #results {
-    margin: 10px auto;
   }
   
 }
