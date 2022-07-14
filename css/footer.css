@@ -1,54 +1,42 @@
-.footer {
-color: white;
-background: #111111;
-display: flex;
-justify-content: space-between;
-font-family: poppins;
-padding: 5% 14%;
-width: 100%;
+.contact-us {
+  color: white;
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  font-family: poppins;
+  padding: 5% 14%;
+  width: 100%;
 }
 
 .contactElement {
-    padding: 5% 0;
-    font-size: 0.9em;
+  padding: 5% 0;
+  font-size: 0.9em;
 }
 
 .contactElement h2 {
-    margin-block-start: 0;
+  margin-block-start: 0;
 }
 
 .contactElements {
-
-    padding: 5% 0;
+  padding: 5% 0;
 }
 
 .registerElement {
-
-    padding: 5% 0;
-
-    display: flex;
-
-    width: 50%;
-
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-
-    font-size: 0.9em;
+  padding: 5% 0;
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9em;
 }
 
 .registerElement h2 {
-
-    margin-top: 0;
-
-    width: 100%;
-
-    text-align: center;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .registerContact {
-
-    width: 50%;
-
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }

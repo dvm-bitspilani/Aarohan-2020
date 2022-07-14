@@ -10,12 +10,13 @@
   background-color: #fafafa;
   transition: 0.2s;
   overflow: hidden;
-  margin-bottom: -120px;
+  /* margin-bottom: -120px; */
   /* display: flex; */
 }
 
 #aboutContainer {
   display: block;
+  margin-bottom: -120px;
 }
 
 .aboutHeading {
