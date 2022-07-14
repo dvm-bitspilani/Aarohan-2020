@@ -1,75 +1,68 @@
 .navHeader {
-    position: fixed;
-    top: 5%;
-    z-index: 100;
-    padding: 30px 35px;
+  position: fixed;
+  top: 5%;
+  z-index: 100;
+  padding: 30px 35px;
 }
 
 .hamburger {
-    display: flex;
-    width: 32px;
-    flex-direction: column;
-    cursor: pointer;
-    overflow: visible;
+  display: flex;
+  width: 32px;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: visible;
 }
 
 .hamburgerLines {
-    height: 4px;
-    background: black;
-    border-radius: 2px;
-    margin: 2px;
-    transition: 0.2s;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+  margin: 2px;
+  transition: 0.2s;
 }
 
 #navBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: black;
-    display: flex;
-    padding: 10%;
-    box-sizing: border-box;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    width: 33%;
-    height: 100%;
-    /* z-index: 1; */
-    transform: translateX(-100%);
-    transition: 0.4s;
-    transition-timing-function: ease;
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  display: flex;
+  padding: 10%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; /* flex-wrap: wrap; */
+  width: 33%;
+  height: 100%; /* z-index: 1; */
+  transform: translateX(-100%);
+  transition: 0.4s;
+  transition-timing-function: ease;
+  z-index: 99;
 }
 
 .navElements {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  font-family: poppins, serif;
+}
+
+a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@media all and (max-width: 600px) {
+  #navBar {
     width: 100%;
-    text-align: center;
-    font-size: 2em;
-    color: white;
-    font-family: poppins, serif;
+  }
+  .navHeader {
+    padding: 12px 17px;
+  }
+  .hamburger {
+    position: fixed;
+    overflow: visible;
+  }
 }
 
-a{
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-
-@media all and (max-width: 600px){
-    #navBar {
-
-        width: 100%;
-
-    }
-
-    .navHeader {
-
-        padding: 12px 17px;
-
-    }
-
-    .hamburger {
-        position: fixed;
-        overflow: visible;
-    }
-}
