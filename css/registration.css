@@ -1,164 +1,166 @@
 .registrationContainer {
-    /* height: 100vh; */
-    width: 100%;
-    display: block;
-    position: relative;
-    margin-top: -5rem;
-    z-index: 2;
-    padding: 0% 16% 5%;
-    box-sizing: border-box;
-    font-family: poppins;
-    background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 200%);
+  /* height: 100vh; */
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: -5rem;
+  z-index: 2;
+  padding: 0% 16% 5%;
+  box-sizing: border-box;
+  font-family: poppins;
+  background: linear-gradient(180deg, #f2f2f2 0%, #ffffff 200%);
 }
 
 .registerAsSchoolContainer {
-    padding-bottom: 5%;
-    width: 40%;
-    float: right;
-    display: flex;
-    flex-direction: column;
+  padding-bottom: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.registerAsSchoolContainer input, select {
-    margin: 4px 0;
-    font-family: Poppins;
+.registerAsSchoolContainer input,
+select {
+  margin: 4px 0;
+  font-family: Poppins;
 }
 
 .registerStudentHeading {
-    width: 100%;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    font-family: poppins-semibold;
-    font-size: 1.5em;
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-family: poppins-semibold;
+  font-size: 1.5em;
 }
 
 .registerSchoolHeading {
-    width: 100%;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    font-family: poppins-semibold;
-    font-size: 1.5em;
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-family: poppins-semibold;
+  font-size: 1.5em;
 }
 
-.registrationForm input, select, span {
-    margin-bottom: 10px;
-    font-family: Poppins;
+.registrationForm input,
+select,
+span {
+  margin-bottom: 10px;
+  font-family: Poppins;
 }
 
 .cancelButton {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .registrationForm input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .registrationForm input[type="radio"]:checked + label {
-    background-color: #FFFDF2;
-    color: black;
-    border-color: #F2CF19;
+  background-color: #fffdf2;
+  color: black;
+  border-color: #f2cf19;
 }
 
 .registrationCheckContainer {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .submitBtn {
-    margin-left: 2rem !important;
-    background: #F2CF19;
+  margin-left: 2rem !important;
+  background: #f2cf19;
 }
 
 .registerCheckbox {
-    padding: 8px;
-    font-size: 0.9em;
-    border: 1.5px solid #9E9E9E;
-    margin: 0 5px;
-    border-radius: 3px;
-    text-align: center;
+  padding: 8px;
+  font-size: 0.9em;
+  border: 1.5px solid #9e9e9e;
+  margin: 0 5px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .registerCheckbox:hover {
-
-    background: #FFFDF2;
+  background: #fffdf2;
 }
 
-.registrationForm input, select {
-    height: 4vh;
-    padding-left: 0.5vw;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    width: 100%;
-    font-family: Poppins;
+.registrationForm input,
+select {
+  height: 4vh;
+  padding-left: 0.5vw;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  width: 100%;
+  font-family: Poppins;
 }
 
 .registerAsSchoolContainer input {
-    /* margin: 2px; */
+  /* margin: 2px; */
 }
 
 .registrationForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9em;
 }
 
 .registrationForm label {
-    width: 100%;
-    margin-bottom: 5px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .buttonContainer input {
-     width: 25%;
-     padding: 8px;
-     height: auto;
-     margin: 3px;
-     border: none;
-     font-family: poppins;
-     font-weight: bold;
-     cursor: pointer;
-     transition: 0.1s;
-     overflow: hidden;
+  width: 25%;
+  padding: 8px;
+  height: auto;
+  margin: 3px;
+  border: none;
+  font-family: poppins;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+  overflow: hidden;
 }
 
 .buttonContainer input:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .grouping {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .registrationInputContainer label {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .registrationInputContainer input {
-    /* width: 20%; */
+  /* width: 20%; */
 }
 
 input[type="number"] {
-    text-align: center;
+  text-align: center;
 }
 
 .registrationInputContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 ::placeholder {
-    font-family: Poppins;
+  font-family: Poppins;
 }
