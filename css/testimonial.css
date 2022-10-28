@@ -96,22 +96,19 @@
 }
 
 @media screen and (max-width: 800px) {
-  
   .testimonialHeading {
     transform: translateY(-80px);
     text-align: center;
   }
 
-  .testimonialBodyContainer{
+  .testimonialBodyContainer {
     grid-template-columns: auto;
     gap: 2rem;
     height: max-content;
   }
 }
 
-
 @media screen and (max-width: 600px) {
-  
   .testimonialHeading {
     transform: translateY(0px);
   }

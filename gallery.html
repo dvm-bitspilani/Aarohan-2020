@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gallery</title>
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-  </head>
 
-  <body>
-    <div class="navHeader">
-      <div class="hamburger" onclick="openCloseNav()">
-        <div class="hamburgerLines"></div>
-        <div class="hamburgerLines"></div>
-        <div class="hamburgerLines"></div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gallery</title>
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/fonts.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+
+<body>
+  <div class="navHeader">
+    <div class="hamburger" onclick="openCloseNav()">
+      <div class="hamburgerLines"></div>
+      <div class="hamburgerLines"></div>
+      <div class="hamburgerLines"></div>
     </div>
-    <div id="navBar">
-      <a href="./index.html#landingContainer">
-        <div class="navElements">Home</div>
-      </a>
-      <a href="./index.html#aboutContainer">
-        <div class="navElements">About Us</div>
-      </a>
-      <a href="./index.html#registrationContainer">
-         <div class="navElements">Register</div>
-      </a>
-      <!-- <a href="result.html">
+  </div>
+  <div id="navBar">
+    <a href="./index.html#landingContainer">
+      <div class="navElements">Home</div>
+    </a>
+    <a href="./index.html#aboutContainer">
+      <div class="navElements">About Us</div>
+    </a>
+    <a href="./index.html#registrationContainer">
+      <div class="navElements">Register</div>
+    </a>
+    <!-- <a href="result.html">
          <div class="navElements">Results</div>
       </a> -->
 
-      <!-- <a href="#">
+    <!-- <a href="#">
                 <div class="navElements">Answer Key</div>
             </a> -->
-      <a href="./index.html#faqContainer">
-        <div class="navElements">FAQs</div>
-      </a>
-      <a href="./gallery.html">
-        <div class="navElements">Gallery</div>
-      </a>
+    <a href="./index.html#faqContainer">
+      <div class="navElements">FAQs</div>
+    </a>
+    <a href="./gallery.html">
+      <div class="navElements">Gallery</div>
+    </a>
+  </div>
+
+  <div class="galleryheading">Our gallery</div>
+
+  <div class="carousel">
+    <div class="leftImages">
+      <img src="./assets/gallery/1.jpg" class="topImg" />
+      <img src="./assets/gallery/2.jpg" class="bottomImg" />
     </div>
-
-    <div class="galleryheading">Our gallery</div>
-
-    <div class="carousel">
-      <div class="leftImages">
-        <img src="./assets/gallery/1.jpg" class="topImg" />
-        <img src="./assets/gallery/2.jpg" class="bottomImg" />
-      </div>
-      <div class="rightImages">
-        <img src="./assets/gallery/3.jpg" class="topImg" />
-        <img src="./assets/gallery/4.jpg" class="bottomImg" />
-      </div>
-      <div class="leftImages">
-        <img src="./assets/gallery/5.jpg" class="topImg" />
-        <img src="./assets/gallery/6.jpg" class="bottomImg" />
-      </div>
-      <div class="rightImages">
-        <img src="./assets/gallery/7.jpg" class="topImg" />
-        <img src="./assets/gallery/9.jpg" class="bottomImg" />
-      </div>
-      <div class="leftImages">
-        <img src="./assets/gallery/10.jpg" class="topImg" />
-        <img src="./assets/gallery/11.jpg" class="bottomImg" />
-      </div>
-      <div class="rightImages">
-        <img src="./assets/gallery/3.jpg" class="topImg" />
-        <img src="./assets/gallery/4.jpg" class="bottomImg" />
-      </div>
+    <div class="rightImages">
+      <img src="./assets/gallery/3.jpg" class="topImg" />
+      <img src="./assets/gallery/4.jpg" class="bottomImg" />
     </div>
+    <div class="leftImages">
+      <img src="./assets/gallery/5.jpg" class="topImg" />
+      <img src="./assets/gallery/6.jpg" class="bottomImg" />
+    </div>
+    <div class="rightImages">
+      <img src="./assets/gallery/7.jpg" class="topImg" />
+      <img src="./assets/gallery/9.jpg" class="bottomImg" />
+    </div>
+    <div class="leftImages">
+      <img src="./assets/gallery/10.jpg" class="topImg" />
+      <img src="./assets/gallery/11.jpg" class="bottomImg" />
+    </div>
+    <div class="rightImages">
+      <img src="./assets/gallery/3.jpg" class="topImg" />
+      <img src="./assets/gallery/4.jpg" class="bottomImg" />
+    </div>
+  </div>
 
-    <script type="text/javascript" src="js/1-2min.js"></script>
-    <script type="text/javascript" src="js/migrate.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/1-2min.js"></script>
+  <script type="text/javascript" src="js/migrate.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
 
-    <script type="text/javascript">
-      function resizefunc() {
-        if (window.innerWidth < 1000) {
-          $(".carousel").slick("unslick");
-        } else {
-          $(document).ready(function () {
-            $(".carousel").slick({
-              dots: true,
-              infinite: true,
-              arrows: true,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            });
+  <script type="text/javascript">
+    function resizefunc() {
+      if (window.innerWidth < 1000) {
+        $(".carousel").slick("unslick");
+      } else {
+        $(document).ready(function () {
+          $(".carousel").slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
           });
-        }
+        });
       }
+    }
 
-      resizefunc();
-    </script>
-    <script src="js/nav.js"></script>
-  </body>
+    resizefunc();
+  </script>
+  <script src="js/nav.js"></script>
+</body>
+
 </html>

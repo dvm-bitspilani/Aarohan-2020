@@ -95,7 +95,7 @@
   font-size: 1.5em;
 }
 
-.SubmitQueryHeading{
+.SubmitQueryHeading {
   margin-bottom: 1.5rem;
 }
 
@@ -184,7 +184,7 @@ input[type="number"] {
   text-align: center;
 }
 
-.queryForm input[type="text"]{
+.queryForm input[type="text"] {
   height: 2.2rem;
 }
 
@@ -193,10 +193,8 @@ input[type="number"] {
   color: black;
 }
 
-
 @media screen and (max-width: 600px) {
   .contactElement h2 {
     text-align: center;
   }
 }
-

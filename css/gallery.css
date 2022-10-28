@@ -44,12 +44,12 @@ img {
   background: #f1f1f100;
   padding: 1px;
 }
- /* Handle */
+/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 50px;
 }
- /* Handle on hover */
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -80,4 +80,3 @@ img {
     display: none;
   }
 }
-

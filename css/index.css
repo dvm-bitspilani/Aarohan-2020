@@ -244,7 +244,7 @@ marquee {
   .buttons {
     margin: 0;
   }
-  .buttons .button{
+  .buttons .button {
     max-width: none;
   }
 }
