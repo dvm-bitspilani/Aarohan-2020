@@ -9,11 +9,11 @@ function handleForm(event) {
   console.log(document.querySelector("#mobile").value);
 
   const formData = new FormData();
-  formData.append("email", document.querySelector("#email").value);
+  formData.append("name", document.querySelector("#name").value);
   formData.append("contact_no", document.querySelector("#mobile").value);
 
   const object = {
-    email: document.querySelector("#email").value,
+    name: document.querySelector("#name").value,
     contact_no: document.querySelector("#mobile").value,
   };
   const data = JSON.stringify(object);
