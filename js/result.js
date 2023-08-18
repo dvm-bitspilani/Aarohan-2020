@@ -19,7 +19,7 @@ function handleForm(event) {
   const data = JSON.stringify(object);
   console.log(data);
 
-  fetch("https://bits-apogee.org/2022/aarohan/result/", {
+  fetch("https://bits-apogee.org/2024/aarohan/result/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: data,

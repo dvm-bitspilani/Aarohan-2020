@@ -13,7 +13,7 @@ function handleForm(event) {
     object[key] = value;
   });
   var json = JSON.stringify(object);
-  fetch("https://bits-apogee.org/2022/aarohan/studentreg/", {
+  fetch("https://bits-apogee.org/2024/aarohan/studentreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
@@ -27,7 +27,7 @@ function handleForm(event) {
           obj.reg_type = response.reg_type;
           obj = JSON.stringify(obj);
           console.log(obj);
-          fetch("https://bits-apogee.org/2022/aarohan/payment/", {
+          fetch("https://bits-apogee.org/2024/aarohan/payment/", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: obj,
@@ -63,7 +63,7 @@ function handleForm2(event) {
   });
   var json = JSON.stringify(object);
   //console.log(json)
-  fetch("https://bits-apogee.org/2022/aarohan/schoolreg/", {
+  fetch("https://bits-apogee.org/2024/aarohan/schoolreg/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
@@ -77,7 +77,7 @@ function handleForm2(event) {
           obj.reg_type = response.reg_type;
           obj = JSON.stringify(obj);
           console.log(obj);
-          fetch("https://bits-apogee.org/2022/aarohan/payment/", {
+          fetch("https://bits-apogee.org/2024/aarohan/payment/", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: obj,

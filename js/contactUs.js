@@ -8,7 +8,7 @@ function handleForm(event) {
     object[key] = value;
   });
   var json = JSON.stringify(object);
-  fetch("https://bits-apogee.org/2022/aarohan/ask_query/", {
+  fetch("https://bits-apogee.org/2024/aarohan/ask_query/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: json,
